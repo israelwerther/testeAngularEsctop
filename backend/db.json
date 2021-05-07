@@ -4,6 +4,11 @@
       "id": 1,
       "name": "Eralv",
       "price": 5.89
+    },
+    {
+      "name": "Produto de teste",
+      "price": 125.98,
+      "id": 2
     }
   ],
   "clienteCredcoop": [

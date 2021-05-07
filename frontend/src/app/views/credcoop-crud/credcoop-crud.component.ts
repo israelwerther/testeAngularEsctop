@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-credcoop-crud',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CredcoopCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToCredcoopCreate(): void {
+    this.Router.navigate(['/credcoop/create'])
   }
 
 }

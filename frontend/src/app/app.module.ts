@@ -24,6 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { CredcoopCrudComponent } from './views/credcoop-crud/credcoop-crud.component';
 import { EsctopCrudComponent } from './views/esctop-crud/esctop-crud.component';
 import { EmprestimoCrudComponent } from './views/emprestimo-crud/emprestimo-crud.component';
+import { CredcoopCreateComponent } from './components/credcoop/credcoop-create/credcoop-create.component';
+import { EsctopCreateComponent } from './components/esctop/esctop-create/esctop-create.component';
+import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -39,6 +42,9 @@ import { EmprestimoCrudComponent } from './views/emprestimo-crud/emprestimo-crud
     CredcoopCrudComponent,
     EsctopCrudComponent,
     EmprestimoCrudComponent,
+    CredcoopCreateComponent,
+    EsctopCreateComponent,
+    EmprestimoCreateComponent,
   ],
   imports: [
     BrowserModule,

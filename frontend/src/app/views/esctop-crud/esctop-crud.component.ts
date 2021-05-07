@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-esctop-crud',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EsctopCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToEsctopCreate(): void {
+    this.Router.navigate(['/esctop/create'])
   }
 
 }
