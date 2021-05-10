@@ -1,3 +1,4 @@
+import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
 import { EsctopCreateComponent } from './components/esctop/esctop-create/esctop-create.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { NgModule } from '@angular/core';
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'emprestimo',
     component: EmprestimoCrudComponent
+  },
+  {
+    path: 'emprestimo/create',
+    component: EmprestimoCreateComponent
   }
 ];
 
