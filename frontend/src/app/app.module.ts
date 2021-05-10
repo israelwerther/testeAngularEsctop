@@ -19,8 +19,12 @@ import { RedDirective } from "./directives/red.directive";
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
 import { HttpClientModule } from '@angular/common/http';
+
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 import { CredcoopCrudComponent } from './views/credcoop-crud/credcoop-crud.component';
 import { EsctopCrudComponent } from './views/esctop-crud/esctop-crud.component';
 import { EmprestimoCrudComponent } from './views/emprestimo-crud/emprestimo-crud.component';
@@ -56,7 +60,10 @@ import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-cr
     MatListModule,
     MatButtonModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
