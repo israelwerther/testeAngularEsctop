@@ -32,6 +32,8 @@ import { CredcoopCreateComponent } from './components/credcoop/credcoop-create/c
 import { EsctopCreateComponent } from './components/esctop/esctop-create/esctop-create.component';
 import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
 
+import {MatTabsModule} from '@angular/material/tabs';
+
 @NgModule({
   // Aqui vai os components, diretivas e pipes
   declarations: [
@@ -63,7 +65,8 @@ import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-cr
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTabsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

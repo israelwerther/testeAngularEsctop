@@ -9,11 +9,36 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './credcoop-create.component.html',
   styleUrls: ['./credcoop-create.component.css']
 })
+
 export class CredcoopCreateComponent implements OnInit {
   
   clienteCredcoop: ClienteCredcoop = {
-    nome: 'israel credcoop',
-    rg: '125.989'
+    nome: '',
+    rg: '',
+    cpf: '',
+    orgaoEmissor: '',
+    dataNascimento: '',
+    naturalidade: '',
+    nacionalidade: '',
+    estadoCivil: '',
+    nomeDaMae: '',
+    nomeDoPai: '',
+    nomeConjuge: '',
+    cpfConjuge: '',
+    contatoConjuge: '',
+    cep: '',
+    rua: '',
+    bairro: '',
+    uf: '',
+    cidade: '',
+    numero: '',
+    complemento: '',
+    pontoDeReferencia: '',
+    contato1: '',
+    contato2: '',
+    celular1: '',
+    celular2: '',
+    email: '',
   }
 
   constructor(private clienteCredcoopService: ClienteCredcoopService,

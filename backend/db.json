@@ -1,91 +1,63 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Eralv",
-      "price": 5.89
-    },
-    {
-      "name": "Produto de teste",
-      "price": 125.98,
-      "id": 2
-    },
-    {
-      "name": "Produto de teste",
-      "price": 125.98,
-      "id": 3
-    },
-    {
-      "name": "Produto de teste",
-      "price": 125.98,
-      "id": 4
-    },
-    {
-      "name": "Produto de teste",
-      "price": 125.98,
-      "id": 5
-    },
-    {
-      "name": "Produto de teste",
-      "price": 125.98,
-      "id": 6
-    },
-    {
-      "name": "nossa",
-      "price": "987",
-      "id": 7
-    },
-    {
-      "name": "caneta azul azul caneta",
-      "price": "1000",
-      "id": 8
-    },
-    {
-      "name": "cardoso",
-      "price": "321,32",
-      "id": 9
-    },
-    {
-      "name": "querosena",
-      "price": "321.12",
-      "id": 10
-    }
-  ],
+  "products": [],
   "clienteCredcoop": [
     {
-      "id": 1,
-      "nome": "israel da silva bezerra",
-      "rg": "2193745"
+      "nome": "Eni",
+      "rg": "Bea",
+      "cpf": "Exc",
+      "orgaoEmissor": "Vol",
+      "dataNascimento": "1992-02-07",
+      "naturalidade": "Dig",
+      "nacionalidade": "Qua",
+      "estadoCivil": "Und",
+      "nomeDaMae": "Dol",
+      "nomeDoPai": "Qui",
+      "nomeConjuge": "Nis",
+      "cpfConjuge": "BEL",
+      "contatoConjuge": "Ius",
+      "cep": "Con",
+      "rua": "Ver",
+      "bairro": "Ita",
+      "uf": "Aut",
+      "cidade": "Sit",
+      "numero": "Vel",
+      "complemento": "Par",
+      "pontoDeReferencia": "Ali",
+      "contato1": "Qui",
+      "contato2": "Est",
+      "celular1": "Mol",
+      "celular2": "Tem",
+      "email": "recazinu@mailinator.com",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "israel da silva bezerra",
-      "rg": "2193745"
-    },
-    {
-      "nome": "israel credcoop",
-      "rg": "125.989",
-      "id": 3
-    },
-    {
-      "nome": "israel credcoop",
-      "rg": "125.989",
-      "id": 4
-    },
-    {
-      "nome": "israel credcoop",
-      "rg": "125.989",
-      "id": 5
-    },
-    {
-      "nome": "israel credcoop",
-      "rg": "125.989",
-      "id": 6
-    },
-    {
-      "nome": "israel credcoop",
-      "rg": "125.989",
-      "id": 7
+      "nome": "Vel",
+      "rg": "Dic",
+      "cpf": "Off",
+      "orgaoEmissor": "Ips",
+      "dataNascimento": "1979-06-17",
+      "naturalidade": "Cor",
+      "nacionalidade": "Fug",
+      "estadoCivil": "Ape",
+      "nomeDaMae": "Iru",
+      "nomeDoPai": "Com",
+      "nomeConjuge": "Exe",
+      "cpfConjuge": "Qui",
+      "contatoConjuge": "Lab",
+      "cep": "Ita",
+      "rua": "Asp",
+      "bairro": "Per",
+      "uf": "Tot",
+      "cidade": "Nob",
+      "numero": "Rem",
+      "complemento": "Inc",
+      "pontoDeReferencia": "Pro",
+      "contato1": "Rep",
+      "contato2": "Cup",
+      "celular1": "Tem",
+      "celular2": "Off",
+      "email": "jazog@mailinator.com",
+      "id": 2
     }
   ]
 }

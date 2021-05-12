@@ -1,9 +1,220 @@
-<p>credcoop-create works!</p>
+<mat-tab-group animationDuration="0ms">
+    <mat-tab label="Dados Pessoais">
+        <mat-card>
+            <mat-card-title>DADOS DO CLIENTE</mat-card-title>            
+                <form>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <mat-form-field>
+                                <input matInput placeholder="Nome" 
+                                [(ngModel)]="clienteCredcoop.nome" name="nome">
+                            </mat-form-field>  
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field>
+                                <input matInput placeholder="CPF"
+                                [(ngModel)]="clienteCredcoop.cpf" name="cpf">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field>
+                                <input matInput placeholder="RG"
+                                [(ngModel)]="clienteCredcoop.rg" name="rg">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field>            
+                                <input matInput placeholder="Orgão Emissor"
+                                [(ngModel)]="clienteCredcoop.orgaoEmissor" name="orgaoEmissor">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field>            
+                                <input type="date" matInput placeholder="Data de Nascimento"
+                                [(ngModel)]="clienteCredcoop.dataNascimento" name="dataNascimento">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <mat-form-field>            
+                                <input matInput placeholder="Naturalidade"
+                                [(ngModel)]="clienteCredcoop.naturalidade" name="naturalidade">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field>            
+                                <input matInput placeholder="Nacionalidade"
+                                [(ngModel)]="clienteCredcoop.nacionalidade" name="nacionalidade">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field>
+                                <input matInput placeholder="Estado Civil"
+                                [(ngModel)]="clienteCredcoop.estadoCivil" name="estadoCivil">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                            <mat-form-field>
+                                <input matInput placeholder="Nome da Mãe"
+                                [(ngModel)]="clienteCredcoop.nomeDaMae" name="nomeDaMae">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                            <mat-form-field>
+                                <input matInput placeholder="Nome do Pai"
+                                [(ngModel)]="clienteCredcoop.nomeDoPai" name="nomeDoPai">
+                            </mat-form-field>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <mat-form-field>
+                                <input matInput placeholder="Nome do Cônjuge"
+                                [(ngModel)]="clienteCredcoop.nomeConjuge" name="nomeConjuge">
+                            </mat-form-field>
+                        </div>
 
-<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
-    Salvar
-</button>
+                    </div>
+                    
+                    
+                    
+                    <mat-form-field>
+                        <input matInput placeholder="CPF do Cônjuge"
+                        [(ngModel)]="clienteCredcoop.cpfConjuge" name="cpfConjuge">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Contato do Cônjuge"
+                        [(ngModel)]="clienteCredcoop.contatoConjuge" name="contatoConjuge">
+                    </mat-form-field>
+                <mat-card-title>ENDEREÇO</mat-card-title>
+                    <mat-form-field>
+                        <input matInput placeholder="CEP"
+                        [(ngModel)]="clienteCredcoop.cep" name="cep">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Rua"
+                        [(ngModel)]="clienteCredcoop.rua" name="rua">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Bairro"
+                        [(ngModel)]="clienteCredcoop.bairro" name="bairro">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="UF"
+                        [(ngModel)]="clienteCredcoop.uf" name="uf">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Cidade"
+                        [(ngModel)]="clienteCredcoop.cidade" name="cidade">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Nº"
+                        [(ngModel)]="clienteCredcoop.numero" name="numero">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Complemento"
+                        [(ngModel)]="clienteCredcoop.complemento" name="complemento">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Ponto de Referência"
+                        [(ngModel)]="clienteCredcoop.pontoDeReferencia" name="pontoDeReferencia">
+                    </mat-form-field>
+                <mat-card-title>CONTATO</mat-card-title>                    
+                    <mat-form-field>
+                        <input matInput placeholder="Contato 1"
+                        [(ngModel)]="clienteCredcoop.contato1" name="contato1">
+                    </mat-form-field>                    
+                    <mat-form-field>
+                        <input matInput placeholder="Contato 2"
+                        [(ngModel)]="clienteCredcoop.contato2" name="contato2">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Celular 1"
+                        [(ngModel)]="clienteCredcoop.celular1" name="celular1">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Celular 2"
+                        [(ngModel)]="clienteCredcoop.celular2" name="celular2">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field [style.width.%]="35">
+                        <input matInput placeholder="Email" type="email"
+                        [(ngModel)]="clienteCredcoop.email" name="email">
+                    </mat-form-field>
+                </form> 
+                <div class="positiva">
+                    <button mat-raised-button (click)="createClienteCredcoop()" color="primary">
+                        Salvar
+                    </button>
+                    <button mat-raised-button (click)="cancel()">
+                        Cancelar
+                    </button>
+                </div> 
+        </mat-card>            
+    </mat-tab>
+    <mat-tab label="Dados do Local de Trabalho">
+        <mat-card>
+            <form>
+            <mat-card-title>DADOS DA EMPRESA</mat-card-title>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Nome" 
+                    [(ngModel)]="clienteCredcoop.nome" name="nome">
+                </mat-form-field>
+            </form>            
+            <div class="positiva">
+                <button mat-raised-button (click)="createClienteCredcoop()" color="primary">
+                    Salvar
+                </button>
+                <button mat-raised-button (click)="cancel()">
+                    Cancelar
+                </button>
+            </div>             
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="Dados Bancários">
 
-<button mat-raised-button (click)="cancel()">
-    Cancelar
-</button>
+    </mat-tab>
+    <mat-tab label="Referências e Observações">
+
+    </mat-tab>
+    
+  </mat-tab-group>
+  
+
