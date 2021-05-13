@@ -25,7 +25,9 @@ export interface ClienteCredcoop {
     contato1: string;
     contato2: string;
     celular1: string;
+    celular1Whatsapp: string;
     celular2: string;
+    celular2Whatsapp: string;
     email: string;
     nomeFantasia: string;
     empresaContato1: string;
