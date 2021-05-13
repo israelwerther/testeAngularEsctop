@@ -33,6 +33,7 @@ import { EsctopCreateComponent } from './components/esctop/esctop-create/esctop-
 import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
 
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -66,7 +67,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTabsModule, 
+    MatTabsModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

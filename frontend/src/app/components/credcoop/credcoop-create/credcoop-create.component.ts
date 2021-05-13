@@ -39,6 +39,9 @@ export class CredcoopCreateComponent implements OnInit {
     celular1: '',
     celular2: '',
     email: '',
+    nomeFantasia: '',
+    empresaContato1: '',
+    empresaContato2: '',
   }
 
   constructor(private clienteCredcoopService: ClienteCredcoopService,

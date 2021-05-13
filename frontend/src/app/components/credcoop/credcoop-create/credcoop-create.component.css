@@ -1,29 +1,19 @@
-/* form {    
-    display: flex;        
-} */
-
 mat-form-field {
     margin: 10px 15px 0px 0px; 
     width: 100%;   
 }
-
 input {
     font-size: 12px;    
 }
-
 button {
     margin: 20px 15px 0px 0px;    
 }
-
-div.positiva{    
-    position: absolute;    
-    margin-left: 750px;
-    margin-top: -85px;    
-}
-
-.mat-card{
-    position: fixed;
-    height: 380px;
+.mat-card{    
+    height: 410px;
     overflow: auto;
+}
+mat-card-title {
+    background-color: rgb(233, 233, 233);
+    padding: 5px;
 }
 
