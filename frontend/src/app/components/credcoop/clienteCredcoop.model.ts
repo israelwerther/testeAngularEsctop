@@ -32,4 +32,17 @@ export interface ClienteCredcoop {
     nomeFantasia: string;
     empresaContato1: string;
     empresaContato2: string;
+    empresaCelular1: string;
+    empresaCelular1Whatsapp: string;
+    empresaCelular2: string;
+    empresaCelular2Whatsapp: string;
+    empresaCep: string;
+    empresaRua: string;
+    empresaBairro: string;
+    empresaUf: string;
+    empresaCidade: string;
+    empresaNumero: string;
+    empresaComplemento: string;
+    empresaPontoDeReferencia: string;
+    empresaObservacoes: string;
 }

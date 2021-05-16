@@ -6,12 +6,16 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<mat-form-field>
-							<input matInput placeholder="Nome" [(ngModel)]="clienteCredcoop.nome" name="nome">
+							<input matInput placeholder="Nome"
+							[(ngModel)]="clienteCredcoop.nome" 
+							name="nome">
 						</mat-form-field>
 					</div>									
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="CPF" [(ngModel)]="clienteCredcoop.cpf" name="cpf">
+							<input matInput placeholder="CPF"
+							[(ngModel)]="clienteCredcoop.cpf"
+							name="cpf">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
@@ -51,12 +55,16 @@
 					</div>
 					<div class="col-sm-3">
 						<mat-form-field>
-							<input matInput placeholder="Nome da Mãe" [(ngModel)]="clienteCredcoop.nomeDaMae" name="nomeDaMae">
+							<input matInput placeholder="Nome da Mãe"
+							[(ngModel)]="clienteCredcoop.nomeDaMae"
+							name="nomeDaMae">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-3">
 						<mat-form-field>
-							<input matInput placeholder="Nome do Pai" [(ngModel)]="clienteCredcoop.nomeDoPai" name="nomeDoPai">
+							<input matInput placeholder="Nome do Pai"
+							[(ngModel)]="clienteCredcoop.nomeDoPai"
+							name="nomeDoPai">
 						</mat-form-field>
 					</div>
 				</div>
@@ -184,6 +192,72 @@
 					<div class="col-sm-2">
 						<mat-form-field>
 							<input matInput placeholder="Contato 2" [(ngModel)]="clienteCredcoop.empresaContato2" name="empresaContato2">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Celular 1" [(ngModel)]="clienteCredcoop.empresaCelular1" name="empresaCelular1">
+						</mat-form-field>
+						<mat-checkbox class="whatsapp-margin" [(ngModel)]="clienteCredcoop.empresaCelular1Whatsapp" name="empresaCelular1Whatsapp">Whatsapp</mat-checkbox>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Celular 2" [(ngModel)]="clienteCredcoop.empresaCelular2" name="empresaCelular2">
+						</mat-form-field>
+						<mat-checkbox class="whatsapp-margin" [(ngModel)]="clienteCredcoop.empresaCelular2Whatsapp" name="empresaCelular2Whatsapp">Whatsapp</mat-checkbox>
+					</div>	
+				</div>
+				<br>
+				<mat-card-title>ENDEREÇO</mat-card-title>				
+				<div class="row">
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="CEP" [(ngModel)]="clienteCredcoop.empresaCep" name="empresaCep">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Rua" [(ngModel)]="clienteCredcoop.empresaRua" name="empresaRua">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Bairro" [(ngModel)]="clienteCredcoop.empresaBairro" name="empresaBairro">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="UF" [(ngModel)]="clienteCredcoop.empresaUf" name="empresaUf">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Cidade" [(ngModel)]="clienteCredcoop.empresaCidade" name="empresaCidade">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Nº" [(ngModel)]="clienteCredcoop.empresaNumero" name="empresaNumero">
+						</mat-form-field>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<mat-form-field>
+							<input matInput placeholder="Complemento" [(ngModel)]="clienteCredcoop.empresaComplemento" name="empresaComplemento">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-6">
+						<mat-form-field>							
+							<input matInput placeholder="Ponto de Referência" [(ngModel)]="clienteCredcoop.empresaPontoDeReferencia"
+							name="empresaPontoDeReferencia">
+						</mat-form-field>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<mat-form-field>
+							<textarea matInput placeholder="Observações" [(ngModel)]="clienteCredcoop.empresaObservacoes" name="empresaObservacoes"></textarea>
 						</mat-form-field>
 					</div>
 				</div>

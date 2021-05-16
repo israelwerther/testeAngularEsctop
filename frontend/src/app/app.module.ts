@@ -34,6 +34,7 @@ import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-cr
 
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -52,6 +53,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     CredcoopCreateComponent,
     EsctopCreateComponent,
     EmprestimoCreateComponent,
+    ProductReadComponent,
   ],
   imports: [
     BrowserModule,

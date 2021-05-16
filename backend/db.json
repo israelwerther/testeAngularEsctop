@@ -1,5 +1,11 @@
 {
-  "products": [],
+  "products": [
+    {
+      "name": "Hiram Cooke",
+      "price": "519",
+      "id": 1
+    }
+  ],
   "clienteCredcoop": [
     {
       "nome": "Mol",
@@ -34,6 +40,53 @@
       "empresaContato1": "Qui",
       "empresaContato2": "Nul",
       "id": 1
+    },
+    {
+      "nome": "Occ",
+      "rg": "Aut",
+      "cpf": "Ad ",
+      "orgaoEmissor": "Ex ",
+      "dataNascimento": "1980-05-25",
+      "naturalidade": "Ut ",
+      "nacionalidade": "Qua",
+      "estadoCivil": "Qui",
+      "nomeDaMae": "Pos",
+      "nomeDoPai": "Qui",
+      "nomeConjuge": "Nem",
+      "cpfConjuge": "Ea ",
+      "contatoConjuge": "Dol",
+      "cep": "Qui",
+      "rua": "Mai",
+      "bairro": "Ut ",
+      "uf": "Con",
+      "cidade": "Aut",
+      "numero": "Ea ",
+      "complemento": "Et ",
+      "pontoDeReferencia": "Vol",
+      "contato1": "Est",
+      "contato2": "Rec",
+      "celular1": "Eli",
+      "celular1Whatsapp": true,
+      "celular2": "Adi",
+      "celular2Whatsapp": true,
+      "email": "fitutupez@mailinator.com",
+      "nomeFantasia": "Vol",
+      "empresaContato1": "Sap",
+      "empresaContato2": "Cul",
+      "empresaCelular1": "Id ",
+      "empresaCelular1Whatsapp": true,
+      "empresaCelular2": "Asp",
+      "empresaCelular2Whatsapp": true,
+      "empresaCep": "Quo",
+      "empresaRua": "Fac",
+      "empresaBairro": "Ali",
+      "empresaUf": "Et ",
+      "empresaCidade": "Odi",
+      "empresaNumero": "Per",
+      "empresaComplemento": "Rer",
+      "empresaPontoDeReferencia": "In ",
+      "empresaObservacoes": "muitas observações",
+      "id": 2
     }
   ]
 }
