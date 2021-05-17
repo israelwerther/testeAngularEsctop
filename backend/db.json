@@ -9,6 +9,11 @@
       "name": "Ian Lucas",
       "price": "822",
       "id": 2
+    },
+    {
+      "name": "Helen Lancaster",
+      "price": "347",
+      "id": 3
     }
   ],
   "clienteCredcoop": []
