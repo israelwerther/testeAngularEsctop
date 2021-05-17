@@ -4,6 +4,21 @@
       "name": "Hiram Cooke",
       "price": "519",
       "id": 1
+    },
+    {
+      "name": "Kim Stevenson",
+      "price": "203",
+      "id": 2
+    },
+    {
+      "name": "Jin Whitehead",
+      "price": "477",
+      "id": 3
+    },
+    {
+      "name": "Brady Clements",
+      "price": "19",
+      "id": 4
     }
   ],
   "clienteCredcoop": [
