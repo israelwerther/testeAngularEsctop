@@ -14,7 +14,60 @@
       "name": "Helen Lancaster",
       "price": "347",
       "id": 3
+    },
+    {
+      "name": "Armand David",
+      "price": "90",
+      "id": 4
     }
   ],
-  "clienteCredcoop": []
+  "clienteCredcoop": [
+    {
+      "nome": "Deb",
+      "rg": "Sit",
+      "cpf": "Aut",
+      "orgaoEmissor": "Id ",
+      "dataNascimento": "1974-09-26",
+      "naturalidade": "Dig",
+      "nacionalidade": "Ull",
+      "estadoCivil": "Qui",
+      "nomeDaMae": "Omn",
+      "nomeDoPai": "Qua",
+      "nomeConjuge": "Ess",
+      "cpfConjuge": "Ame",
+      "contatoConjuge": "Qua",
+      "cep": "Nul",
+      "rua": "Vol",
+      "bairro": "Des",
+      "uf": "Vel",
+      "cidade": "Sol",
+      "numero": "Qui",
+      "complemento": "Cul",
+      "pontoDeReferencia": "In ",
+      "contato1": "Eni",
+      "contato2": "Pro",
+      "celular1": "Vol",
+      "celular1Whatsapp": true,
+      "celular2": "Mol",
+      "celular2Whatsapp": true,
+      "email": "wixytufohe@mailinator.com",
+      "nomeFantasia": "Ass",
+      "empresaContato1": "Ame",
+      "empresaContato2": "Vel",
+      "empresaCelular1": "Nat",
+      "empresaCelular1Whatsapp": true,
+      "empresaCelular2": "Non",
+      "empresaCelular2Whatsapp": true,
+      "empresaCep": "Iur",
+      "empresaRua": "Dol",
+      "empresaBairro": "Opt",
+      "empresaUf": "Qui",
+      "empresaCidade": "Dol",
+      "empresaNumero": "Ill",
+      "empresaComplemento": "Ut ",
+      "empresaPontoDeReferencia": "Rem",
+      "empresaObservacoes": "Har",
+      "id": 1
+    }
+  ]
 }

@@ -1,9 +1,13 @@
 .footer {
+    height: inherit;
+    justify-content: flex-end;    
+    background-color:#3f51b5;
     position: fixed;
+    left: 0;
     bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-    height: 40px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */   
 }
 
 /* estudar com '>' afeta o style */
