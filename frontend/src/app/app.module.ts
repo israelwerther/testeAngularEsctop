@@ -35,10 +35,6 @@ import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-cr
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
-import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -58,7 +54,6 @@ import { MatSortModule } from '@angular/material/sort';
     EsctopCreateComponent,
     EmprestimoCreateComponent,
     ProductReadComponent,
-    ProductRead2Component,
   ],
   imports: [
     BrowserModule,
@@ -76,9 +71,6 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,
     MatTabsModule,
     MatCheckboxModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
