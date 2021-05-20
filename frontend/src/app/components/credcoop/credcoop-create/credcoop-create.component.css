@@ -9,7 +9,7 @@ button {
     margin: 20px 15px 0px 0px;    
 }
 .mat-card{
-    overflow: auto;    
+    overflow: auto;  
 }
 mat-card-title {
     background-color: rgb(233, 233, 233);
