@@ -17,6 +17,7 @@ mat-card-title {
     padding: 5px;
 }
 
+/* posiciona mais proximo a checkbox do numero  */
 .whatsapp-margin{
     position: absolute;
     margin-top: -15px;
