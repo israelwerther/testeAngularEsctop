@@ -19,6 +19,11 @@
       "name": "Brady Clements",
       "price": "19",
       "id": 4
+    },
+    {
+      "name": "luiz",
+      "price": "660",
+      "id": 5
     }
   ],
   "clienteCredcoop": [
@@ -102,6 +107,318 @@
       "empresaPontoDeReferencia": "In ",
       "empresaObservacoes": "muitas observações",
       "id": 2
+    },
+    {
+      "dadosPessoais": {
+        "nome": "Quo",
+        "cpf": "Con",
+        "rg": "Ea ",
+        "orgaoEmissor": "Fug",
+        "dataNascimento": "1972-06-19",
+        "naturalidade": "Rep",
+        "nacionalidade": "Non",
+        "estadoCivil": "Et ",
+        "nomeDaMae": "Adi",
+        "nomeDoPai": "Atq"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Mol",
+        "cpfConjuge": "Bea",
+        "contatoConjuge": "Dol"
+      },
+      "enderecos": [
+        {
+          "cep": "",
+          "rua": "",
+          "bairro": "",
+          "uf": "",
+          "cidade": "",
+          "numero": "",
+          "complemento": "",
+          "pontoDeReferencia": ""
+        }
+      ],
+      "contato": {
+        "email": "",
+        "fixo": [
+          {
+            "numero": "",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "",
+            "ativo": true
+          }
+        ]
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "contato": {
+          "email": "",
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ]
+        },
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "empresaObservacoes": ""
+      },
+      "id": 3
+    },
+    {
+      "dadosPessoais": {
+        "nome": "Rep",
+        "cpf": "Sed",
+        "rg": "Vol",
+        "orgaoEmissor": "Dol",
+        "dataNascimento": "1994-07-02",
+        "naturalidade": "Dol",
+        "nacionalidade": "Sap",
+        "estadoCivil": "Err",
+        "nomeDaMae": "Vol",
+        "nomeDoPai": "Aut"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Rem",
+        "cpfConjuge": "Non",
+        "contatoConjuge": "Bla"
+      },
+      "enderecos": [
+        {
+          "cep": "",
+          "rua": "",
+          "bairro": "",
+          "uf": "",
+          "cidade": "",
+          "numero": "",
+          "complemento": "",
+          "pontoDeReferencia": ""
+        }
+      ],
+      "contato": {
+        "email": "zapo@mailinator.com",
+        "fixo": [
+          {
+            "numero": "Iru",
+            "ativo": true
+          },
+          {
+            "numero": "Con",
+            "ativo": true
+          },
+          {
+            "numero": "Dic",
+            "ativo": true
+          },
+          {
+            "numero": "Ali",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "Nob",
+            "ativo": true
+          },
+          {
+            "numero": "Com",
+            "ativo": true
+          },
+          {
+            "numero": "Rer",
+            "ativo": true
+          },
+          {
+            "numero": "Mag",
+            "ativo": true
+          }
+        ]
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "contato": {
+          "email": "",
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ]
+        },
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "empresaObservacoes": ""
+      },
+      "id": 4
+    },
+    {
+      "dadosPessoais": {
+        "nome": "Ten",
+        "cpf": "Nat",
+        "rg": "Com",
+        "orgaoEmissor": "Tem",
+        "dataNascimento": "1992-07-23",
+        "naturalidade": "Iru",
+        "nacionalidade": "Dol",
+        "estadoCivil": "Sed",
+        "nomeDaMae": "Vel",
+        "nomeDoPai": "Qui"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Cum",
+        "cpfConjuge": "Est",
+        "contatoConjuge": "Ame"
+      },
+      "enderecos": [
+        {
+          "cep": "Sit",
+          "rua": "Min",
+          "bairro": "Pra",
+          "uf": "Qua",
+          "cidade": "In ",
+          "numero": "Ea ",
+          "complemento": "Min",
+          "pontoDeReferencia": "Est"
+        },
+        {
+          "cep": "Eos",
+          "rua": "Lab",
+          "bairro": "Sed",
+          "uf": "Nis",
+          "cidade": "Cil",
+          "numero": "Qui",
+          "complemento": "Inv",
+          "pontoDeReferencia": "Nam"
+        },
+        {
+          "cep": "Sae",
+          "rua": "Qui",
+          "bairro": "Ame",
+          "uf": "Ut ",
+          "cidade": "Ill",
+          "numero": "Est",
+          "complemento": "Rer",
+          "pontoDeReferencia": "Bla"
+        },
+        {
+          "cep": "Exp",
+          "rua": "Et ",
+          "bairro": "Vol",
+          "uf": "Ex ",
+          "cidade": "Eu ",
+          "numero": "Ten",
+          "complemento": "Nec",
+          "pontoDeReferencia": "Ame"
+        }
+      ],
+      "contato": {
+        "email": "wygisyjafe@mailinator.com",
+        "fixo": [
+          {
+            "numero": "Sit",
+            "ativo": true
+          },
+          {
+            "numero": "Mai",
+            "ativo": true
+          },
+          {
+            "numero": "Sit",
+            "ativo": true
+          },
+          {
+            "numero": "Ull",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "Eiu",
+            "ativo": true
+          },
+          {
+            "numero": "Adi",
+            "ativo": true
+          },
+          {
+            "numero": "Min",
+            "ativo": true
+          },
+          {
+            "numero": "Est",
+            "ativo": true
+          }
+        ]
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "contato": {
+          "email": "",
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ]
+        },
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "empresaObservacoes": ""
+      },
+      "id": 5
     }
   ]
 }

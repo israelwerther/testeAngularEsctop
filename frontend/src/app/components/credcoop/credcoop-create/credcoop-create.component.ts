@@ -13,50 +13,81 @@ import { Component, OnInit } from '@angular/core';
 export class CredcoopCreateComponent implements OnInit {
   
   clienteCredcoop: ClienteCredcoop = {
-    nome: '',
-    rg: '',
-    cpf: '',
-    orgaoEmissor: '',
-    dataNascimento: '',
-    naturalidade: '',
-    nacionalidade: '',
-    estadoCivil: '',
-    nomeDaMae: '',
-    nomeDoPai: '',
-    nomeConjuge: '',
-    cpfConjuge: '',
-    contatoConjuge: '',
-    cep: '',
-    rua: '',
-    bairro: '',
-    uf: '',
-    cidade: '',
-    numero: '',
-    complemento: '',
-    pontoDeReferencia: '',
-    contato1: '',
-    contato2: '',
-    celular1: '',
-    celular1Whatsapp: '',
-    celular2: '',
-    celular2Whatsapp: '',
-    email: '',
-    nomeFantasia: '',
-    empresaContato1: '',
-    empresaContato2: '',
-    empresaCelular1: '',
-    empresaCelular1Whatsapp: '',
-    empresaCelular2: '',
-    empresaCelular2Whatsapp: '',
-    empresaCep: '',
-    empresaRua: '',
-    empresaBairro: '',
-    empresaUf: '',
-    empresaCidade: '',
-    empresaNumero: '',
-    empresaComplemento: '',
-    empresaPontoDeReferencia: '',
-    empresaObservacoes: '',
+    dadosPessoais: {
+      nome: '',
+      cpf: '',
+      rg: '',
+      orgaoEmissor: '',
+      dataNascimento: '',
+      naturalidade: '',
+      nacionalidade: '',
+      estadoCivil: '',
+      nomeDaMae: '',
+      nomeDoPai: '',
+    },
+    dadosConjuge: {
+      nomeConjuge: '',
+      cpfConjuge: '',
+      contatoConjuge: '',
+    },
+    enderecos: [
+      {
+        cep: '',
+        rua: '',
+        bairro: '',
+        uf: '',
+        cidade: '',
+        numero: '',
+        complemento: '',
+        pontoDeReferencia: '',
+      }
+    ],
+    contato: {
+      email: '',
+      fixo: [
+        {
+          numero: '',
+          ativo: true
+        }
+      ],
+      celular: [
+        {
+          numero: '',
+          ativo: true
+        }
+      ]
+    },
+    localDeTrabalho: {
+      nomeFantasia: '',
+      contato: {
+        email: '',
+        fixo: [
+          {
+            numero: '',
+            ativo: true
+          }
+        ],
+        celular: [
+          {
+            numero: '',
+            ativo: true
+          }
+        ]
+      },
+      enderecos: [
+        {
+          cep: '',
+          rua: '',
+          bairro: '',
+          uf: '',
+          cidade: '',
+          numero: '',
+          complemento: '',
+          pontoDeReferencia: '',
+        }
+      ],
+      empresaObservacoes: ''
+    }
   }
 
   constructor(private clienteCredcoopService: ClienteCredcoopService,
@@ -64,6 +95,39 @@ export class CredcoopCreateComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+
+  adicionar(tipoDeTelefone: string): void { 
+    if(tipoDeTelefone == 'fixo') {
+      this.clienteCredcoop.contato.fixo.push(
+        {
+          numero: '',
+          ativo: true
+        }
+      )
+    } 
+    else if(tipoDeTelefone == 'celular') {
+      this.clienteCredcoop.contato.celular.push(
+        {
+          numero: '',
+          ativo: true
+        }
+      )
+    }
+    else if(tipoDeTelefone == 'enderecoPessoal') {
+      this.clienteCredcoop.enderecos.push(
+        {
+          cep: '',
+          rua: '',
+          bairro: '',
+          uf: '',
+          cidade: '',
+          numero: '',
+          complemento: '',
+          pontoDeReferencia: '',
+        }
+      )
+    }
   }
 
   createClienteCredcoop(): void {

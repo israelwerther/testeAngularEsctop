@@ -1,48 +1,36 @@
+import { ContatoCredcoop } from './contatoCredcoop.model';
+import { EnderecoCredcoop } from './enderecoCredcoop.model';
 export interface ClienteCredcoop {
     // ? torna o id opcional
     id?: number;
-    nome: string;
-    cpf: string;
-    rg: string;
-    orgaoEmissor: string;
-    dataNascimento: string;
-    naturalidade: string;
-    nacionalidade: string;
-    estadoCivil: string;
-    nomeDaMae: string;
-    nomeDoPai: string;
-    nomeConjuge: string;
-    cpfConjuge: string;
-    contatoConjuge: string;
-    cep: string;
-    rua: string;
-    bairro: string;
-    uf: string;
-    cidade: string;
-    numero: string;
-    complemento: string;
-    pontoDeReferencia: string;
-    contato1: string;
-    contato2: string;
-    celular1: string;
-    celular1Whatsapp: string;
-    celular2: string;
-    celular2Whatsapp: string;
-    email: string;
-    nomeFantasia: string;
-    empresaContato1: string;
-    empresaContato2: string;
-    empresaCelular1: string;
-    empresaCelular1Whatsapp: string;
-    empresaCelular2: string;
-    empresaCelular2Whatsapp: string;
-    empresaCep: string;
-    empresaRua: string;
-    empresaBairro: string;
-    empresaUf: string;
-    empresaCidade: string;
-    empresaNumero: string;
-    empresaComplemento: string;
-    empresaPontoDeReferencia: string;
-    empresaObservacoes: string;
+    dadosPessoais: {
+        nome: string;
+        cpf: string;
+        rg: string;
+        orgaoEmissor: string;
+        dataNascimento: string;
+        naturalidade: string;
+        nacionalidade: string;
+        estadoCivil: string;
+        nomeDaMae: string;
+        nomeDoPai: string;
+    };
+    dadosConjuge: {
+        nomeConjuge: string;
+        cpfConjuge: string;
+        contatoConjuge: string;
+    };
+    enderecos: [
+        EnderecoCredcoop
+    ];
+    contato: ContatoCredcoop;
+    localDeTrabalho: {
+        nomeFantasia: string;
+        contato: ContatoCredcoop;
+        enderecos: [
+            EnderecoCredcoop
+        ]
+        empresaObservacoes: string;
+    }
+    
 }
