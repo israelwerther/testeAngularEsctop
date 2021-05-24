@@ -4,19 +4,3 @@
     </li>
 </ul>
 
-<ul>
-    <li *ngFor="let cliente of clientesEscTop">
-        {{ cliente.dadosPessoais.nome }}
-        {{ cliente.contato.redesSociais[0].rede }}
-        <ul>
-            <li *ngFor="let rede of cliente.contato.redesSociais">
-            <a [href]="rede.url">{{rede.rede}}</a>
-            </li>
-        </ul>
-        <ul>
-            <li *ngFor="let tel of cliente.contato.telefones">
-            <a class="{{tel.ativo ? '':'text-danger'}}">{{tel.numero}}</a> <input type="checkbox" name="" [checked]="tel.whatsapp" id="">
-            </li>
-        </ul>        
-    </li>
-</ul>
