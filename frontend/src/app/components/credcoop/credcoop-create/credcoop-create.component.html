@@ -137,7 +137,7 @@
 				<div class="row">
 					<div class="col">
 						<button mat-raised-button (click)="adicionar('enderecoPessoal')" color="primary" style="width:100%">
-							+ Endereço
+							+1 Endereço
 						</button>
 					</div>
 				</div>
@@ -147,18 +147,27 @@
 				<div class="row">
 					<div class="col-sm-3" *ngFor="let telFixo of clienteCredcoop.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
-							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}" [(ngModel)]="telFixo.numero" name="numero">														
+							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}" [(ngModel)]="telFixo.numero" name="numeroFixo">														
 						</mat-form-field>
 					</div>
-					<button class="btn btn-outline-success btn-sm" (click)="adicionar('fixo')">+</button>
+					<div class="col">
+						<button mat-raised-button (click)="adicionar('fixo')" color="primary" style="width:100%">
+							1+ Fixo
+						</button>
+					</div>
+					
 				</div>
 				<div class="row">
 					<div class="col-sm-3" *ngFor="let telCelular of clienteCredcoop.contato.celular; index as indexDoCelular">
 						<mat-form-field>
-							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}" [(ngModel)]="telCelular.numero" name="numero">														
+							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}" [(ngModel)]="telCelular.numero" name="numeroCelular">														
 						</mat-form-field>
 					</div>
-					<button class="btn btn-outline-success btn-sm" (click)="adicionar('celular')">+</button>
+					<div class="col">
+						<button mat-raised-button (click)="adicionar('celular')" color="primary" style="width:100%">
+							1+ Celular
+						</button>
+					</div>					
 				</div>
 					<!--					
 					<div class="col-sm-2">
