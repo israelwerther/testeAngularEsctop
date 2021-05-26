@@ -53,7 +53,8 @@ export class CredcoopCreateComponent implements OnInit {
       celular: [
         {
           numero: '',
-          ativo: true
+          ativo: false,
+          whatsapp: false
         }
       ]
     },
@@ -70,7 +71,8 @@ export class CredcoopCreateComponent implements OnInit {
         celular: [
           {
             numero: '',
-            ativo: true
+            ativo: true,
+            whatsapp: false
           }
         ]
       },
@@ -110,7 +112,8 @@ export class CredcoopCreateComponent implements OnInit {
       this.clienteCredcoop.contato.celular.push(
         {
           numero: '',
-          ativo: true
+          ativo: true,
+          whatsapp: false
         }
       )
     }

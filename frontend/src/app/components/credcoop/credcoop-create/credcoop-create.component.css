@@ -15,10 +15,9 @@ mat-card-title {
     background-color: rgb(233, 233, 233);
     padding: 5px;
 }
-
 /* posiciona mais proximo a checkbox do numero  */
 .whatsapp-margin{
-    position: absolute;
-    margin-top: -15px;
+    /* position: absolute;
+    margin-top: -20px; */
+    border: 1px solid black;
 }
-
