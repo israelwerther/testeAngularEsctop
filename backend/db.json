@@ -3,182 +3,105 @@
   "clienteCredcoop": [
     {
       "dadosPessoais": {
-        "nome": "israel da silva",
-        "cpf": "06334411470",
-        "rg": "2197394",
-        "orgaoEmissor": "ssp-rn",
-        "dataNascimento": "2021-05-27",
-        "naturalidade": "natal",
-        "nacionalidade": "brasil",
-        "estadoCivil": "casado",
-        "nomeDaMae": "maria ",
-        "nomeDoPai": "miguel"
+        "nome": "Max",
+        "cpf": "Id",
+        "rg": "Dol",
+        "orgaoEmissor": "Arc",
+        "dataNascimento": "1984-03-14",
+        "naturalidade": "Omn",
+        "nacionalidade": "Qua",
+        "estadoCivil": "Exe",
+        "nomeDaMae": "Est",
+        "nomeDoPai": "Tot"
       },
       "dadosConjuge": {
-        "nomeConjuge": "jesica",
-        "cpfConjuge": "0654654654",
-        "contatoConjuge": "849999999"
+        "nomeConjuge": "Aut",
+        "cpfConjuge": "Ab ",
+        "contatoConjuge": "Sit"
       },
       "enderecos": [
         {
-          "cep": "59106105",
-          "rua": "esperança",
-          "bairro": "igapó",
-          "uf": "rn",
-          "cidade": "natal",
-          "numero": "80",
-          "complemento": "asdasdasd",
-          "pontoDeReferencia": "asdasdasd"
-        },
-        {
-          "cep": "32123123",
-          "rua": "esperança1",
-          "bairro": "igapó1",
-          "uf": "rn1",
-          "cidade": "natal1",
-          "numero": "801",
-          "complemento": "asdasdasd1",
-          "pontoDeReferencia": "asdasdasd1"
+          "cep": "Ame",
+          "rua": "Ess",
+          "bairro": "Ear",
+          "uf": "Ips",
+          "cidade": "A q",
+          "numero": "Nam",
+          "complemento": "Aut",
+          "pontoDeReferencia": "Neq"
         }
       ],
       "contato": {
         "fixo": [
           {
-            "numero": "84888888888",
+            "numero": "fixo1",
             "ativo": true
           },
           {
-            "numero": "84999999999",
+            "numero": "fixo2",
             "ativo": true
           }
         ],
         "celular": [
           {
-            "numero": "8544444444",
+            "numero": "cel1",
             "ativo": true,
             "whatsapp": false
           },
           {
-            "numero": "8555555555",
+            "numero": "cel2",
             "ativo": true,
             "whatsapp": true
           }
         ],
-        "email": "israel@gmail.com"
+        "email": "cipojiq@mailinator.com"
       },
       "localDeTrabalho": {
-        "nomeFantasia": "empresa fantasia",
+        "nomeFantasia": "Har",
         "enderecos": [
           {
-            "cep": "59654654654",
-            "rua": "tamara",
-            "bairro": "igapuso",
-            "uf": "sp",
-            "cidade": "sp",
-            "numero": "89",
-            "complemento": "asdddsada",
-            "pontoDeReferencia": "ddsadsadadasd"
+            "cep": "In ",
+            "rua": "Nih",
+            "bairro": "Qua",
+            "uf": "Eiu",
+            "cidade": "Eum",
+            "numero": "Ad ",
+            "complemento": "Sol",
+            "pontoDeReferencia": "Do "
           }
         ],
         "contato": {
           "fixo": [
             {
-              "numero": "848888888",
+              "numero": "fixoempresa1",
+              "ativo": true
+            },
+            {
+              "numero": "fixoempresa2",
+              "ativo": true
+            },
+            {
+              "numero": "fixoempresa3",
               "ativo": true
             }
           ],
           "celular": [
             {
-              "numero": "847777777777",
+              "numero": "celempresa1",
+              "ativo": true,
+              "whatsapp": true
+            },
+            {
+              "numero": "celempresa2",
               "ativo": true,
               "whatsapp": true
             }
           ],
-          "email": ""
+          "email": "fanab@mailinator.com"
         },
-        "empresaObservacoes": ""
+        "observacoes": "bem observado"
       },
       "id": 1
-    },
-    {
-      "dadosPessoais": {
-        "nome": "Eu ",
-        "cpf": "Pos",
-        "rg": "Qua",
-        "orgaoEmissor": "Aut",
-        "dataNascimento": "1989-07-18",
-        "naturalidade": "In ",
-        "nacionalidade": "Qui",
-        "estadoCivil": "Ut ",
-        "nomeDaMae": "Et ",
-        "nomeDoPai": "Acc"
-      },
-      "dadosConjuge": {
-        "nomeConjuge": "Qui",
-        "cpfConjuge": "Vol",
-        "contatoConjuge": "Vol"
-      },
-      "enderecos": [
-        {
-          "cep": "Lab",
-          "rua": "Acc",
-          "bairro": "Eu ",
-          "uf": "Ita",
-          "cidade": "Vel",
-          "numero": "Pra",
-          "complemento": "In ",
-          "pontoDeReferencia": "Aut"
-        }
-      ],
-      "contato": {
-        "fixo": [
-          {
-            "numero": "Et ",
-            "ativo": true
-          }
-        ],
-        "celular": [
-          {
-            "numero": "Per",
-            "ativo": true,
-            "whatsapp": true
-          }
-        ],
-        "email": "cego@mailinator.com"
-      },
-      "localDeTrabalho": {
-        "nomeFantasia": "Tem",
-        "enderecos": [
-          {
-            "cep": "Ist",
-            "rua": "Ist",
-            "bairro": "Qui",
-            "uf": "Err",
-            "cidade": "Fac",
-            "numero": "Rer",
-            "complemento": "Vol",
-            "pontoDeReferencia": "Ame"
-          }
-        ],
-        "contato": {
-          "fixo": [
-            {
-              "numero": "Eaq",
-              "ativo": true
-            }
-          ],
-          "celular": [
-            {
-              "numero": "Dol",
-              "ativo": true,
-              "whatsapp": true
-            }
-          ],
-          "email": "localdetrabalho@mailinator.com"
-        },
-        "empresaObservacoes": ""
-      },
-      "id": 2
     }
   ]
 }

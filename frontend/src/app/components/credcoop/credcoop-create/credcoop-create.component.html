@@ -136,7 +136,7 @@
 				</div>	
 				<div class="row">
 					<div class="col">
-						<button mat-raised-button (click)="adicionar('enderecoPessoal')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addEnderecoPessoal')" color="primary" style="width:100%">
 							+1 Endereço
 						</button>
 					</div>
@@ -149,11 +149,11 @@
 						<mat-form-field>
 							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}"
 							[(ngModel)]="telFixo.numero"
-							name="numeroFixo{{indexDoFixo}}">														
+							name="numero{{indexDoFixo}}">														
 						</mat-form-field>						
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="adicionar('fixo')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addFixo')" color="primary" style="width:100%">
 							+1 Fixo
 						</button>
 					</div>					
@@ -164,7 +164,7 @@
 						<mat-form-field>
 							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}"
 							[(ngModel)]="telCelular.numero"
-							name="numeroCelular{{indexDoCelular}}">
+							name="numero{{indexDoCelular}}">
 						</mat-form-field>
 						<mat-checkbox
 							[(ngModel)]="telCelular.whatsapp"
@@ -176,7 +176,7 @@
 						</mat-checkbox>						
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="adicionar('celular')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addCelular')" color="primary" style="width:100%">
 							+1 Celular
 						</button>
 					</div>
@@ -196,14 +196,15 @@
 				Cancelar
 			</button>
 			<mat-divider></mat-divider>		
-		</mat-card>
+		</mat-card>		
 	</mat-tab>
+
 	<mat-tab label="Dados do Local de Trabalho">
 		<mat-card>
 			<form>				
 				<mat-card-title>DADOS DA EMPRESA</mat-card-title>
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-12">
 						<mat-form-field>
 							<input matInput placeholder="Nome Fantasia"
 							[(ngModel)]="clienteCredcoop.localDeTrabalho.nomeFantasia" 
@@ -261,23 +262,24 @@
 				</div>	
 				<div class="row">
 					<div class="col">
-						<button mat-raised-button (click)="adicionar('enderecoTrabalho')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addEnderecoTrabalho')" color="primary" style="width:100%">
 							+1 Endereço
 						</button>
 					</div>
 				</div>
 				<br>
+
 				<mat-card-title>CONTATO</mat-card-title>								
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telFixo of clienteCredcoop.localDeTrabalho.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
 							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}"
 							[(ngModel)]="telFixo.numero"
-							name="numeroFixo{{indexDoFixo}}">														
+							name="numero{{indexDoFixo}}">														
 						</mat-form-field>						
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="adicionar('fixoTrabalho')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('fixoTrabalho')" color="primary" style="width:100%">
 							+1 Fixo
 						</button>
 					</div>					
@@ -288,7 +290,7 @@
 						<mat-form-field>
 							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}"
 							[(ngModel)]="telCelular.numero"
-							name="numeroCelular{{indexDoCelular}}">
+							name="numero{{indexDoCelular}}">
 						</mat-form-field>
 						<mat-checkbox
 							[(ngModel)]="telCelular.whatsapp"
@@ -300,7 +302,7 @@
 						</mat-checkbox>						
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="adicionar('celularTrabalho')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('celularTrabalho')" color="primary" style="width:100%">
 							+1 Celular
 						</button>
 					</div>
@@ -308,8 +310,18 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<mat-form-field>
-							<input matInput placeholder="Email" type="email" [(ngModel)]="clienteCredcoop.localDeTrabalho.contato.email" name="email">
-						</mat-form-field>						
+							<input matInput placeholder="Email" type="email" [(ngModel)]="clienteCredcoop.localDeTrabalho.contato.email" 
+							name="email">
+						</mat-form-field>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<mat-form-field>
+							<input matInput placeholder="Observações"
+							[(ngModel)]="clienteCredcoop.localDeTrabalho.observacoes" 
+							name="observacoes">
+						</mat-form-field>
 					</div>
 				</div>
 			</form>	

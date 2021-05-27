@@ -30,7 +30,7 @@ export interface ClienteCredcoop {
         enderecos: [
             EnderecoCredcoop
         ]
-        empresaObservacoes: string;
+        observacoes: string;
     }
 
 }
