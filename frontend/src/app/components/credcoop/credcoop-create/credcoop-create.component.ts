@@ -43,7 +43,6 @@ export class CredcoopCreateComponent implements OnInit {
       }
     ],
     contato: {
-      email: '',
       fixo: [
         {
           numero: '',
@@ -53,29 +52,14 @@ export class CredcoopCreateComponent implements OnInit {
       celular: [
         {
           numero: '',
-          ativo: false,
+          ativo: true,
           whatsapp: false
         }
-      ]
+      ],
+      email: ''
     },
     localDeTrabalho: {
       nomeFantasia: '',
-      contato: {
-        email: '',
-        fixo: [
-          {
-            numero: '',
-            ativo: true
-          }
-        ],
-        celular: [
-          {
-            numero: '',
-            ativo: true,
-            whatsapp: false
-          }
-        ]
-      },
       enderecos: [
         {
           cep: '',
@@ -88,6 +72,22 @@ export class CredcoopCreateComponent implements OnInit {
           pontoDeReferencia: '',
         }
       ],
+      contato: {
+        fixo: [
+          {
+            numero: '',
+            ativo: true
+          }
+        ],
+        celular: [
+          {
+            numero: '',
+            ativo: true,
+            whatsapp: false
+          }
+        ],
+        email: ''
+      },
       empresaObservacoes: ''
     }
   }
@@ -99,16 +99,16 @@ export class CredcoopCreateComponent implements OnInit {
     
   }
 
-  adicionar(tipoDeTelefone: string): void { 
-    if(tipoDeTelefone == 'fixo') {
+  adicionar(add: string): void { 
+    if(add == 'fixo') {
       this.clienteCredcoop.contato.fixo.push(
         {
           numero: '',
           ativo: true
         }
       )
-    } 
-    else if(tipoDeTelefone == 'celular') {
+    }
+    else if(add == 'celular') {
       this.clienteCredcoop.contato.celular.push(
         {
           numero: '',
@@ -117,7 +117,7 @@ export class CredcoopCreateComponent implements OnInit {
         }
       )
     }
-    else if(tipoDeTelefone == 'enderecoPessoal') {
+    else if(add == 'enderecoPessoal') {
       this.clienteCredcoop.enderecos.push(
         {
           cep: '',
@@ -128,6 +128,37 @@ export class CredcoopCreateComponent implements OnInit {
           numero: '',
           complemento: '',
           pontoDeReferencia: '',
+        }
+      )
+    }
+    else if(add == 'enderecoTrabalho') {
+      this.clienteCredcoop.localDeTrabalho.enderecos.push(
+        {
+          cep: '',
+          rua: '',
+          bairro: '',
+          uf: '',
+          cidade: '',
+          numero: '',
+          complemento: '',
+          pontoDeReferencia: '',
+        }
+      )
+    }
+    else if(add == 'fixoTrabalho') {
+      this.clienteCredcoop.localDeTrabalho.contato.fixo.push(
+        {
+          numero: '',
+          ativo: true
+        }
+      )
+    }
+    else if(add == 'celularTrabalho') {
+      this.clienteCredcoop.localDeTrabalho.contato.celular.push(
+        {
+          numero: '',
+          ativo: true,
+          whatsapp: false
         }
       )
     }

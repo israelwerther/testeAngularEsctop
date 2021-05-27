@@ -32,5 +32,5 @@ export interface ClienteCredcoop {
         ]
         empresaObservacoes: string;
     }
-    
+
 }

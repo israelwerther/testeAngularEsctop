@@ -27,6 +27,255 @@
     }
   ],
   "clienteCredcoop": [
-    
+    {
+      "dadosPessoais": {
+        "nome": "Ali",
+        "cpf": "Cup",
+        "rg": "Pra",
+        "orgaoEmissor": "Off",
+        "dataNascimento": "2016-11-26",
+        "naturalidade": "Cum",
+        "nacionalidade": "Acc",
+        "estadoCivil": "Sit",
+        "nomeDaMae": "Aut",
+        "nomeDoPai": "Mai"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Ex ",
+        "cpfConjuge": "Ex ",
+        "contatoConjuge": "Opt"
+      },
+      "enderecos": [
+        {
+          "cep": "Ten",
+          "rua": "Seq",
+          "bairro": "Rep",
+          "uf": "Con",
+          "cidade": "Und",
+          "numero": "Est",
+          "complemento": "Tot",
+          "pontoDeReferencia": "Par"
+        }
+      ],
+      "contato": {
+        "email": "vavohu@mailinator.com",
+        "fixo": [
+          {
+            "numero": "Qui",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "11111111111111111",
+            "ativo": false,
+            "whatsapp": false
+          },
+          {
+            "numero": "2222222222222222",
+            "ativo": true,
+            "whatsapp": true
+          },
+          {
+            "numero": "3333333333333333",
+            "ativo": true,
+            "whatsapp": false
+          }
+        ]
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "contato": {
+          "email": "",
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ]
+        },
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "empresaObservacoes": ""
+      },
+      "id": 1
+    },
+    {
+      "dadosPessoais": {
+        "nome": "Ut ",
+        "cpf": "Ut ",
+        "rg": "Ven",
+        "orgaoEmissor": "Eni",
+        "dataNascimento": "1991-04-05",
+        "naturalidade": "Quo",
+        "nacionalidade": "Con",
+        "estadoCivil": "Ten",
+        "nomeDaMae": "Qui",
+        "nomeDoPai": "Qui"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Per",
+        "cpfConjuge": "Ut ",
+        "contatoConjuge": "Con"
+      },
+      "enderecos": [
+        {
+          "cep": "Qui",
+          "rua": "Bea",
+          "bairro": "Eos",
+          "uf": "Pla",
+          "cidade": "Vit",
+          "numero": "Deb",
+          "complemento": "Neq",
+          "pontoDeReferencia": "Qui"
+        }
+      ],
+      "contato": {
+        "email": "tekoz@mailinator.com",
+        "fixo": [
+          {
+            "numero": "Deb",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "Tem",
+            "ativo": true,
+            "whatsapp": true
+          }
+        ]
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "fantasia",
+        "contato": {
+          "email": "",
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ]
+        },
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "empresaObservacoes": ""
+      },
+      "id": 2
+    },
+    {
+      "dadosPessoais": {
+        "nome": "Ut ",
+        "cpf": "Vel",
+        "rg": "Ad ",
+        "orgaoEmissor": "Exe",
+        "dataNascimento": "1994-08-06",
+        "naturalidade": "Qui",
+        "nacionalidade": "Mag",
+        "estadoCivil": "Mol",
+        "nomeDaMae": "Odi",
+        "nomeDoPai": "Qui"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Ver",
+        "cpfConjuge": "Off",
+        "contatoConjuge": "Dic"
+      },
+      "enderecos": [
+        {
+          "cep": "Ven",
+          "rua": "Sae",
+          "bairro": "Dol",
+          "uf": "Eos",
+          "cidade": "Occ",
+          "numero": "Rer",
+          "complemento": "Rer",
+          "pontoDeReferencia": "Mag"
+        }
+      ],
+      "contato": {
+        "email": "sozugewiza@mailinator.com",
+        "fixo": [
+          {
+            "numero": "Dic",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "Mol",
+            "ativo": true,
+            "whatsapp": true
+          }
+        ]
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "fantasy",
+        "contato": {
+          "email": "",
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ]
+        },
+        "enderecos": [
+          {
+            "cep": "987987",
+            "rua": "rua",
+            "bairro": "bairro",
+            "uf": "uf",
+            "cidade": "cidade ",
+            "numero": "numero",
+            "complemento": "asd",
+            "pontoDeReferencia": "asd"
+          }
+        ],
+        "empresaObservacoes": ""
+      },
+      "id": 3
+    }
   ]
 }
