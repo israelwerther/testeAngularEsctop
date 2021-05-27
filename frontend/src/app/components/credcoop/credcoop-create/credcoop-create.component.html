@@ -143,13 +143,13 @@
 				</div>
 				<br>
 
-				<mat-card-title>CONTATO</mat-card-title>
+				<mat-card-title>CONTATO oi</mat-card-title>
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telFixo of clienteCredcoop.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
 							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}"
 							[(ngModel)]="telFixo.numero"
-							name="numero{{indexDoFixo}}">														
+							name="numeroDoFixo{{indexDoFixo}}">														
 						</mat-form-field>						
 					</div>
 					<div class="col">
@@ -164,7 +164,7 @@
 						<mat-form-field>
 							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}"
 							[(ngModel)]="telCelular.numero"
-							name="numero{{indexDoCelular}}">
+							name="numeroDoCelular{{indexDoCelular}}">
 						</mat-form-field>
 						<mat-checkbox
 							[(ngModel)]="telCelular.whatsapp"
@@ -335,18 +335,35 @@
 	</mat-tab>
 
 	<mat-tab label="Dados Bancários">
-		<div class="row" *ngFor="let dadoBancario of clienteCredcoop.dadosBancarios; index as indexDoDadoBancario">
-			<div class="col-sm-12">
-				<mat-card-title class="w-100"> Dados {{indexDoDadoBancario == 0 ? '1':indexDoDadoBancario+1}}</mat-card-title>
-			</div>
-			<div class="col-sm-2">
-				<mat-form-field>
-					<input matInput placeholder="Banco" [(ngModel)]="dadoBancario.banco" name="banco{{indexDoDadoBancario}}">
-				</mat-form-field>
-			</div>
-			
-		</div>
+		<mat-card>
+			<form>
+				<div class="row" *ngFor="let dadoBancario of clienteCredcoop.dadosBancarios; index as indexDoDadoBancario">
+					<div class="col-sm-12">
+						<mat-card-title class="w-100"> CONTA BANCÁRIA {{indexDoDadoBancario == 0 ? '1':indexDoDadoBancario+1}}</mat-card-title>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Banco" [(ngModel)]="dadoBancario.banco" name="banco{{indexDoDadoBancario}}">
+						</mat-form-field>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<button mat-raised-button (click)="addForm('addContaBancaria')" color="primary" style="width:100%">
+							+1 Conta
+						</button>
+					</div>
+				</div>
+			</form>	
+			<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
+				Salvar
+			</button>
+			<button mat-raised-button (click)="cancel()">
+				Cancelar
+			</button>		
+		</mat-card>
 	</mat-tab>
+
 	<mat-tab label="Referências e Observações">
 
 	</mat-tab>	

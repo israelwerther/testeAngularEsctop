@@ -170,6 +170,17 @@ export class CredcoopCreateComponent implements OnInit {
         }
       )
     }
+    else if(add == 'addContaBancaria') {
+      this.clienteCredcoop.dadosBancarios.push(
+        {
+          banco: '',
+          numeroDaOperacao: '',
+          tipoDeConta: '',
+          numeroDaAgencia: '',
+          numeroDaconta: '',
+        }
+      )
+    }
   }
 
   createClienteCredcoop(): void {
