@@ -1,281 +1,184 @@
 {
-  "products": [
-    {
-      "name": "Hiram Cooke",
-      "price": "519",
-      "id": 1
-    },
-    {
-      "name": "Kim Stevenson",
-      "price": "203",
-      "id": 2
-    },
-    {
-      "name": "Jin Whitehead",
-      "price": "477",
-      "id": 3
-    },
-    {
-      "name": "Brady Clements",
-      "price": "19",
-      "id": 4
-    },
-    {
-      "name": "luiz",
-      "price": "660",
-      "id": 5
-    }
-  ],
+  "products": [],
   "clienteCredcoop": [
     {
       "dadosPessoais": {
-        "nome": "Ali",
-        "cpf": "Cup",
-        "rg": "Pra",
-        "orgaoEmissor": "Off",
-        "dataNascimento": "2016-11-26",
-        "naturalidade": "Cum",
-        "nacionalidade": "Acc",
-        "estadoCivil": "Sit",
-        "nomeDaMae": "Aut",
-        "nomeDoPai": "Mai"
+        "nome": "israel da silva",
+        "cpf": "06334411470",
+        "rg": "2197394",
+        "orgaoEmissor": "ssp-rn",
+        "dataNascimento": "2021-05-27",
+        "naturalidade": "natal",
+        "nacionalidade": "brasil",
+        "estadoCivil": "casado",
+        "nomeDaMae": "maria ",
+        "nomeDoPai": "miguel"
       },
       "dadosConjuge": {
-        "nomeConjuge": "Ex ",
-        "cpfConjuge": "Ex ",
-        "contatoConjuge": "Opt"
+        "nomeConjuge": "jesica",
+        "cpfConjuge": "0654654654",
+        "contatoConjuge": "849999999"
       },
       "enderecos": [
         {
-          "cep": "Ten",
-          "rua": "Seq",
-          "bairro": "Rep",
-          "uf": "Con",
-          "cidade": "Und",
-          "numero": "Est",
-          "complemento": "Tot",
-          "pontoDeReferencia": "Par"
+          "cep": "59106105",
+          "rua": "esperança",
+          "bairro": "igapó",
+          "uf": "rn",
+          "cidade": "natal",
+          "numero": "80",
+          "complemento": "asdasdasd",
+          "pontoDeReferencia": "asdasdasd"
+        },
+        {
+          "cep": "32123123",
+          "rua": "esperança1",
+          "bairro": "igapó1",
+          "uf": "rn1",
+          "cidade": "natal1",
+          "numero": "801",
+          "complemento": "asdasdasd1",
+          "pontoDeReferencia": "asdasdasd1"
         }
       ],
       "contato": {
-        "email": "vavohu@mailinator.com",
         "fixo": [
           {
-            "numero": "Qui",
+            "numero": "84888888888",
+            "ativo": true
+          },
+          {
+            "numero": "84999999999",
             "ativo": true
           }
         ],
         "celular": [
           {
-            "numero": "11111111111111111",
-            "ativo": false,
+            "numero": "8544444444",
+            "ativo": true,
             "whatsapp": false
           },
           {
-            "numero": "2222222222222222",
+            "numero": "8555555555",
             "ativo": true,
             "whatsapp": true
-          },
-          {
-            "numero": "3333333333333333",
-            "ativo": true,
-            "whatsapp": false
           }
-        ]
+        ],
+        "email": "israel@gmail.com"
       },
       "localDeTrabalho": {
-        "nomeFantasia": "",
+        "nomeFantasia": "empresa fantasia",
+        "enderecos": [
+          {
+            "cep": "59654654654",
+            "rua": "tamara",
+            "bairro": "igapuso",
+            "uf": "sp",
+            "cidade": "sp",
+            "numero": "89",
+            "complemento": "asdddsada",
+            "pontoDeReferencia": "ddsadsadadasd"
+          }
+        ],
         "contato": {
-          "email": "",
           "fixo": [
             {
-              "numero": "",
+              "numero": "848888888",
               "ativo": true
             }
           ],
           "celular": [
             {
-              "numero": "",
+              "numero": "847777777777",
               "ativo": true,
-              "whatsapp": false
+              "whatsapp": true
             }
-          ]
+          ],
+          "email": ""
         },
-        "enderecos": [
-          {
-            "cep": "",
-            "rua": "",
-            "bairro": "",
-            "uf": "",
-            "cidade": "",
-            "numero": "",
-            "complemento": "",
-            "pontoDeReferencia": ""
-          }
-        ],
         "empresaObservacoes": ""
       },
       "id": 1
     },
     {
       "dadosPessoais": {
-        "nome": "Ut ",
-        "cpf": "Ut ",
-        "rg": "Ven",
-        "orgaoEmissor": "Eni",
-        "dataNascimento": "1991-04-05",
-        "naturalidade": "Quo",
-        "nacionalidade": "Con",
-        "estadoCivil": "Ten",
-        "nomeDaMae": "Qui",
-        "nomeDoPai": "Qui"
+        "nome": "Eu ",
+        "cpf": "Pos",
+        "rg": "Qua",
+        "orgaoEmissor": "Aut",
+        "dataNascimento": "1989-07-18",
+        "naturalidade": "In ",
+        "nacionalidade": "Qui",
+        "estadoCivil": "Ut ",
+        "nomeDaMae": "Et ",
+        "nomeDoPai": "Acc"
       },
       "dadosConjuge": {
-        "nomeConjuge": "Per",
-        "cpfConjuge": "Ut ",
-        "contatoConjuge": "Con"
+        "nomeConjuge": "Qui",
+        "cpfConjuge": "Vol",
+        "contatoConjuge": "Vol"
       },
       "enderecos": [
         {
-          "cep": "Qui",
-          "rua": "Bea",
-          "bairro": "Eos",
-          "uf": "Pla",
-          "cidade": "Vit",
-          "numero": "Deb",
-          "complemento": "Neq",
-          "pontoDeReferencia": "Qui"
+          "cep": "Lab",
+          "rua": "Acc",
+          "bairro": "Eu ",
+          "uf": "Ita",
+          "cidade": "Vel",
+          "numero": "Pra",
+          "complemento": "In ",
+          "pontoDeReferencia": "Aut"
         }
       ],
       "contato": {
-        "email": "tekoz@mailinator.com",
         "fixo": [
           {
-            "numero": "Deb",
+            "numero": "Et ",
             "ativo": true
           }
         ],
         "celular": [
           {
-            "numero": "Tem",
+            "numero": "Per",
             "ativo": true,
             "whatsapp": true
           }
-        ]
+        ],
+        "email": "cego@mailinator.com"
       },
       "localDeTrabalho": {
-        "nomeFantasia": "fantasia",
+        "nomeFantasia": "Tem",
+        "enderecos": [
+          {
+            "cep": "Ist",
+            "rua": "Ist",
+            "bairro": "Qui",
+            "uf": "Err",
+            "cidade": "Fac",
+            "numero": "Rer",
+            "complemento": "Vol",
+            "pontoDeReferencia": "Ame"
+          }
+        ],
         "contato": {
-          "email": "",
           "fixo": [
             {
-              "numero": "",
+              "numero": "Eaq",
               "ativo": true
             }
           ],
           "celular": [
             {
-              "numero": "",
+              "numero": "Dol",
               "ativo": true,
-              "whatsapp": false
+              "whatsapp": true
             }
-          ]
+          ],
+          "email": "localdetrabalho@mailinator.com"
         },
-        "enderecos": [
-          {
-            "cep": "",
-            "rua": "",
-            "bairro": "",
-            "uf": "",
-            "cidade": "",
-            "numero": "",
-            "complemento": "",
-            "pontoDeReferencia": ""
-          }
-        ],
         "empresaObservacoes": ""
       },
       "id": 2
-    },
-    {
-      "dadosPessoais": {
-        "nome": "Ut ",
-        "cpf": "Vel",
-        "rg": "Ad ",
-        "orgaoEmissor": "Exe",
-        "dataNascimento": "1994-08-06",
-        "naturalidade": "Qui",
-        "nacionalidade": "Mag",
-        "estadoCivil": "Mol",
-        "nomeDaMae": "Odi",
-        "nomeDoPai": "Qui"
-      },
-      "dadosConjuge": {
-        "nomeConjuge": "Ver",
-        "cpfConjuge": "Off",
-        "contatoConjuge": "Dic"
-      },
-      "enderecos": [
-        {
-          "cep": "Ven",
-          "rua": "Sae",
-          "bairro": "Dol",
-          "uf": "Eos",
-          "cidade": "Occ",
-          "numero": "Rer",
-          "complemento": "Rer",
-          "pontoDeReferencia": "Mag"
-        }
-      ],
-      "contato": {
-        "email": "sozugewiza@mailinator.com",
-        "fixo": [
-          {
-            "numero": "Dic",
-            "ativo": true
-          }
-        ],
-        "celular": [
-          {
-            "numero": "Mol",
-            "ativo": true,
-            "whatsapp": true
-          }
-        ]
-      },
-      "localDeTrabalho": {
-        "nomeFantasia": "fantasy",
-        "contato": {
-          "email": "",
-          "fixo": [
-            {
-              "numero": "",
-              "ativo": true
-            }
-          ],
-          "celular": [
-            {
-              "numero": "",
-              "ativo": true,
-              "whatsapp": false
-            }
-          ]
-        },
-        "enderecos": [
-          {
-            "cep": "987987",
-            "rua": "rua",
-            "bairro": "bairro",
-            "uf": "uf",
-            "cidade": "cidade ",
-            "numero": "numero",
-            "complemento": "asd",
-            "pontoDeReferencia": "asd"
-          }
-        ],
-        "empresaObservacoes": ""
-      },
-      "id": 3
     }
   ]
 }

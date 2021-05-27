@@ -305,6 +305,13 @@
 						</button>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<mat-form-field>
+							<input matInput placeholder="Email" type="email" [(ngModel)]="clienteCredcoop.localDeTrabalho.contato.email" name="email">
+						</mat-form-field>						
+					</div>
+				</div>
 			</form>	
 			<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
 				Salvar
