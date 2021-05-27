@@ -88,8 +88,15 @@ export class CredcoopCreateComponent implements OnInit {
         ],
         email: ''
       },
-      observacoes: ''
-    }
+      observacoes: ''   
+    },
+    dadosBancarios: [{
+      banco: '',
+      numeroDaOperacao: '',
+      tipoDeConta: '',
+      numeroDaAgencia: '',
+      numeroDaconta: '',
+    }],    
   }
 
   constructor(private clienteCredcoopService: ClienteCredcoopService,

@@ -1,3 +1,4 @@
+import { DadosBancarios } from './dadosBancarios.model';
 import { ContatoCredcoop } from './contatoCredcoop.model';
 import { EnderecoCredcoop } from './enderecoCredcoop.model';
 export interface ClienteCredcoop {
@@ -32,5 +33,7 @@ export interface ClienteCredcoop {
         ]
         observacoes: string;
     }
-
+    dadosBancarios: [
+        DadosBancarios
+    ];
 }
