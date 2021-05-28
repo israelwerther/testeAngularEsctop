@@ -339,11 +339,38 @@
 			<form>
 				<div class="row" *ngFor="let dadoBancario of clienteCredcoop.dadosBancarios; index as indexDoDadoBancario">
 					<div class="col-sm-12">
-						<mat-card-title class="w-100"> CONTA BANCÁRIA {{indexDoDadoBancario == 0 ? '1':indexDoDadoBancario+1}}</mat-card-title>
+						<mat-card-title class="w-100"> 
+							CONTA BANCÁRIA {{indexDoDadoBancario == 0 ? '1':indexDoDadoBancario+1}}
+						</mat-card-title>
+					</div>
+					<div class="col-sm-4">
+						<mat-form-field>
+							<input matInput placeholder="Banco" [(ngModel)]="dadoBancario.banco" 
+							name="banco{{indexDoDadoBancario}}">
+						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="Banco" [(ngModel)]="dadoBancario.banco" name="banco{{indexDoDadoBancario}}">
+							<input matInput placeholder="Nº da Operação" [(ngModel)]="dadoBancario.numeroDaOperacao" 
+							name="numeroDaOperacao{{indexDoDadoBancario}}">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Tipo de Conta" [(ngModel)]="dadoBancario.tipoDeConta" 
+							name="tipoDeConta{{indexDoDadoBancario}}">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Nº da Agência" [(ngModel)]="dadoBancario.numeroDaAgencia" 
+							name="numeroDaAgencia{{indexDoDadoBancario}}">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Nº da Conta" [(ngModel)]="dadoBancario.numeroDaconta" 
+							name="numeroDaconta{{indexDoDadoBancario}}">
 						</mat-form-field>
 					</div>
 				</div>
