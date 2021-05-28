@@ -1,6 +1,7 @@
 import { DadosBancarios } from './dadosBancarios.model';
 import { ContatoCredcoop } from './contatoCredcoop.model';
 import { EnderecoCredcoop } from './enderecoCredcoop.model';
+import { Referencias } from './referencias.model';
 export interface ClienteCredcoop {
     // ? torna o id opcional
     id?: number;
@@ -35,5 +36,8 @@ export interface ClienteCredcoop {
     }
     dadosBancarios: [
         DadosBancarios
+    ];
+    referencias: [
+        Referencias
     ];
 }

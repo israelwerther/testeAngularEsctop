@@ -96,6 +96,11 @@ export class CredcoopCreateComponent implements OnInit {
       tipoDeConta: '',
       numeroDaAgencia: '',
       numeroDaconta: '',
+    }],  
+    referencias: [{
+      nome: '',
+      contato: '',
+      parentesco: '',      
     }],    
   }
 
@@ -178,6 +183,15 @@ export class CredcoopCreateComponent implements OnInit {
           tipoDeConta: '',
           numeroDaAgencia: '',
           numeroDaconta: '',
+        }
+      )
+    }
+    else if(add == 'addReferencia') {
+      this.clienteCredcoop.referencias.push(
+        {
+          nome: '',
+          contato: '',
+          parentesco: '',          
         }
       )
     }

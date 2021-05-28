@@ -3,108 +3,6 @@
   "clienteCredcoop": [
     {
       "dadosPessoais": {
-        "nome": "Max",
-        "cpf": "Id",
-        "rg": "Dol",
-        "orgaoEmissor": "Arc",
-        "dataNascimento": "1984-03-14",
-        "naturalidade": "Omn",
-        "nacionalidade": "Qua",
-        "estadoCivil": "Exe",
-        "nomeDaMae": "Est",
-        "nomeDoPai": "Tot"
-      },
-      "dadosConjuge": {
-        "nomeConjuge": "Aut",
-        "cpfConjuge": "Ab ",
-        "contatoConjuge": "Sit"
-      },
-      "enderecos": [
-        {
-          "cep": "Ame",
-          "rua": "Ess",
-          "bairro": "Ear",
-          "uf": "Ips",
-          "cidade": "A q",
-          "numero": "Nam",
-          "complemento": "Aut",
-          "pontoDeReferencia": "Neq"
-        }
-      ],
-      "contato": {
-        "fixo": [
-          {
-            "numero": "fixo1",
-            "ativo": true
-          },
-          {
-            "numero": "fixo2",
-            "ativo": true
-          }
-        ],
-        "celular": [
-          {
-            "numero": "cel1",
-            "ativo": true,
-            "whatsapp": false
-          },
-          {
-            "numero": "cel2",
-            "ativo": true,
-            "whatsapp": true
-          }
-        ],
-        "email": "cipojiq@mailinator.com"
-      },
-      "localDeTrabalho": {
-        "nomeFantasia": "Har",
-        "enderecos": [
-          {
-            "cep": "In ",
-            "rua": "Nih",
-            "bairro": "Qua",
-            "uf": "Eiu",
-            "cidade": "Eum",
-            "numero": "Ad ",
-            "complemento": "Sol",
-            "pontoDeReferencia": "Do "
-          }
-        ],
-        "contato": {
-          "fixo": [
-            {
-              "numero": "fixoempresa1",
-              "ativo": true
-            },
-            {
-              "numero": "fixoempresa2",
-              "ativo": true
-            },
-            {
-              "numero": "fixoempresa3",
-              "ativo": true
-            }
-          ],
-          "celular": [
-            {
-              "numero": "celempresa1",
-              "ativo": true,
-              "whatsapp": true
-            },
-            {
-              "numero": "celempresa2",
-              "ativo": true,
-              "whatsapp": true
-            }
-          ],
-          "email": "fanab@mailinator.com"
-        },
-        "observacoes": "bem observado"
-      },
-      "id": 1
-    },
-    {
-      "dadosPessoais": {
         "nome": "",
         "cpf": "",
         "rg": "",
@@ -183,14 +81,42 @@
       },
       "dadosBancarios": [
         {
-          "banco": "Cul",
-          "numeroDaOperacao": "",
-          "tipoDeConta": "",
-          "numeroDaAgencia": "",
-          "numeroDaconta": ""
+          "banco": "Sim",
+          "numeroDaOperacao": "Ex ",
+          "tipoDeConta": "Ut ",
+          "numeroDaAgencia": "Sol",
+          "numeroDaconta": "Inc"
+        },
+        {
+          "banco": "Per",
+          "numeroDaOperacao": "Ut ",
+          "tipoDeConta": "Eli",
+          "numeroDaAgencia": "Ten",
+          "numeroDaconta": "Ad "
+        },
+        {
+          "banco": "Qua",
+          "numeroDaOperacao": "Lor",
+          "tipoDeConta": "Exp",
+          "numeroDaAgencia": "Off",
+          "numeroDaconta": "Per"
+        },
+        {
+          "banco": "Iru",
+          "numeroDaOperacao": "Sim",
+          "tipoDeConta": "Sun",
+          "numeroDaAgencia": "Dis",
+          "numeroDaconta": "Acc"
+        },
+        {
+          "banco": "Ea ",
+          "numeroDaOperacao": "Nos",
+          "tipoDeConta": "Qui",
+          "numeroDaAgencia": "Eni",
+          "numeroDaconta": "Qui"
         }
       ],
-      "id": 2
+      "id": 1
     },
     {
       "dadosPessoais": {
@@ -279,7 +205,19 @@
           "numeroDaconta": ""
         }
       ],
-      "id": 3
+      "referencias": [
+        {
+          "nome": "REFERÊNCIA 1",
+          "contato": "contato 1",
+          "parentesco": "parentesco '"
+        },
+        {
+          "nome": "REFERÊNCIA2",
+          "contato": "contato2",
+          "parentesco": "parentesco2"
+        }
+      ],
+      "id": 2
     }
   ]
 }

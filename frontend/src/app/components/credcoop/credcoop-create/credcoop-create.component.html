@@ -391,7 +391,49 @@
 		</mat-card>
 	</mat-tab>
 
-	<mat-tab label="Referências e Observações">
-
+	<mat-tab label="Referências">
+		<mat-card>
+			<form>
+				<div class="row" *ngFor="let referencia of clienteCredcoop.referencias; index as indexDaReferencia">
+					<div class="col-sm-12">
+						<mat-card-title class="w-100"> 
+							REFERÊNCIA {{indexDaReferencia == 0 ? '1':indexDaReferencia+1}}
+						</mat-card-title>
+					</div>
+					<div class="col-sm-4">
+						<mat-form-field>
+							<input matInput placeholder="Nome" [(ngModel)]="referencia.nome" 
+							name="nome{{indexDaReferencia}}">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Contato" [(ngModel)]="referencia.contato" 
+							name="contato{{indexDaReferencia}}">
+						</mat-form-field>
+					</div>
+					<div class="col-sm-2">
+						<mat-form-field>
+							<input matInput placeholder="Parentesco" [(ngModel)]="referencia.parentesco" 
+							name="parentesco{{indexDaReferencia}}">
+						</mat-form-field>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col">
+						<button mat-raised-button (click)="addForm('addReferencia')" color="primary" style="width:100%">
+							+1 Conta
+						</button>
+					</div>
+				</div>
+			</form>	
+			<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
+				Salvar
+			</button>
+			<button mat-raised-button (click)="cancel()">
+				Cancelar
+			</button>		
+		</mat-card>
 	</mat-tab>	
 </mat-tab-group>
