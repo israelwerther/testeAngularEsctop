@@ -86,7 +86,7 @@
 								name="contatoConjuge">
 						</mat-form-field>
 					</div>
-				</div>							
+				</div>
 							
 				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">
 					<div class="col-sm-12">
@@ -145,8 +145,7 @@
 							-1 Endereço
 						</button>
 					</div>
-				</div>	
-				
+				</div>
 				<br>
 
 				<mat-card-title>CONTATO</mat-card-title>
@@ -155,15 +154,37 @@
 						<mat-form-field>
 							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}"
 							[(ngModel)]="telFixo.numero"
-							name="numeroDoFixo{{indexDoFixo}}">														
-						</mat-form-field>						
+							name="numeroDoFixo{{indexDoFixo}}">
+							<button class="m-0"(click)="removeForm('removeFixo')" *ngIf="indexDoFixo > 0 && indexDoFixo == clienteCredcoop.contato.fixo.length-1" matSuffix mat-icon-button aria-label="Clear">
+								<i class="material-icons d-flex align-items-center">
+									&times;
+								</i>
+							</button>
+						</mat-form-field>
+						
+						<!-- <mat-form-field>
+							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}"
+							[(ngModel)]="telFixo.numero"
+							name="numeroDoFixo{{indexDoFixo}}">
+							<ng-container *ngIf="indexDoFixo == clienteCredcoop.contato.fixo.length-1">								
+								<button matSuffix mat-icon-button aria-label="Clear">
+									x
+								</button>															
+							</ng-container>							
+						</mat-form-field> -->
 					</div>
-					<div class="col">
-						<button mat-raised-button (click)="addForm('addFixo')" color="primary" style="width:100%">
+				
+					<div class="col-sm-1">
+						<button mat-raised-button (click)="addForm('addFixo')" color="primary">
 							+1 Fixo
 						</button>
-					</div>					
-				</div>
+					</div>
+					<!-- <div class="col-sm-1">
+						<button mat-raised-button (click)="removeForm('removeFixo')" color="warn">
+							-1 Fixo
+						</button>
+					</div> -->
+				</div>	
 
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telCelular of clienteCredcoop.contato.celular; index as indexDoCelular">
@@ -182,8 +203,13 @@
 						</mat-checkbox>						
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="addForm('addCelular')" color="primary" style="width:100%">
-							+1 Celular
+						<button mat-raised-button (click)="addForm('addCelular')" color="primary">
+							+1 Cel
+						</button>
+					</div>
+					<div class="col">
+						<button mat-raised-button (click)="removeForm('removeCelular')" color="warn">
+							-1 Cel
 						</button>
 					</div>
 				</div>

@@ -113,7 +113,21 @@ export class CredcoopCreateComponent implements OnInit {
 
   // adiciona um component de formulário; contato e endereços, por exemplo
   addForm(add: string): void { 
-    if(add == 'addFixo') {
+    if(add == 'addEnderecoPessoal') {
+      this.clienteCredcoop.enderecos.push(
+        {
+          cep: '',
+          rua: '',
+          bairro: '',
+          uf: '',
+          cidade: '',
+          numero: '',
+          complemento: '',
+          pontoDeReferencia: '',
+        }
+      )
+    }
+    else if(add == 'addFixo') {
       this.clienteCredcoop.contato.fixo.push(
         {
           numero: '',
@@ -127,20 +141,6 @@ export class CredcoopCreateComponent implements OnInit {
           numero: '',
           ativo: true,
           whatsapp: false
-        }
-      )
-    }
-    else if(add == 'addEnderecoPessoal') {
-      this.clienteCredcoop.enderecos.push(
-        {
-          cep: '',
-          rua: '',
-          bairro: '',
-          uf: '',
-          cidade: '',
-          numero: '',
-          complemento: '',
-          pontoDeReferencia: '',
         }
       )
     }
@@ -201,6 +201,12 @@ export class CredcoopCreateComponent implements OnInit {
     if(remove == 'removeEnderecoPessoal') {
       this.clienteCredcoop.enderecos.pop(        
       )
+    }
+    else if(remove == 'removeFixo') {
+      this.clienteCredcoop.contato.fixo.pop()
+    }
+    else if(remove == 'removeCelular') {
+      this.clienteCredcoop.contato.celular.pop()
     }
   }
 
