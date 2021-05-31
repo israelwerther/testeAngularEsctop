@@ -140,10 +140,16 @@
 							+1 Endereço
 						</button>
 					</div>
-				</div>
+					<div class="col">
+						<button mat-raised-button (click)="removeForm('removeEnderecoPessoal')" color="warn" style="width:100%">
+							-1 Endereço
+						</button>
+					</div>
+				</div>	
+				
 				<br>
 
-				<mat-card-title>CONTATO oi</mat-card-title>
+				<mat-card-title>CONTATO</mat-card-title>
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telFixo of clienteCredcoop.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
