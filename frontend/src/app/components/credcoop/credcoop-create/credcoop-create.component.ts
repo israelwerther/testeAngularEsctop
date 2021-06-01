@@ -219,6 +219,9 @@ export class CredcoopCreateComponent implements OnInit {
     else if(remove == 'removeContaBancaria') {
       this.clienteCredcoop.dadosBancarios.pop()
     }
+    else if(remove == 'removeReferencia') {
+      this.clienteCredcoop.referencias.pop()
+    }
   }
 
   createClienteCredcoop(): void {
