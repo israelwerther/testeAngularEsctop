@@ -218,6 +218,102 @@
         }
       ],
       "id": 2
+    },
+    {
+      "dadosPessoais": {
+        "nome": "",
+        "cpf": "12312312312312",
+        "rg": "",
+        "orgaoEmissor": "",
+        "dataNascimento": "",
+        "naturalidade": "",
+        "nacionalidade": "",
+        "estadoCivil": "",
+        "nomeDaMae": "",
+        "nomeDoPai": ""
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "",
+        "cpfConjuge": "",
+        "contatoConjuge": ""
+      },
+      "enderecos": [
+        {
+          "cep": "",
+          "rua": "",
+          "bairro": "",
+          "uf": "",
+          "cidade": "",
+          "numero": "",
+          "complemento": "",
+          "pontoDeReferencia": ""
+        }
+      ],
+      "contato": {
+        "fixo": [
+          {
+            "numero": "",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "",
+            "ativo": true,
+            "whatsapp": false
+          }
+        ],
+        "email": ""
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "contato": {
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ],
+          "email": ""
+        },
+        "observacoes": ""
+      },
+      "dadosBancarios": [
+        {
+          "banco": "",
+          "numeroDaOperacao": "",
+          "tipoDeConta": "",
+          "numeroDaAgencia": "",
+          "numeroDaconta": ""
+        }
+      ],
+      "referencias": [
+        {
+          "nome": "",
+          "contato": "",
+          "parentesco": ""
+        }
+      ],
+      "id": 3
     }
   ]
 }

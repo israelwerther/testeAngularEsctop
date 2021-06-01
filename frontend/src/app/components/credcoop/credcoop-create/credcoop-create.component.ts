@@ -20,7 +20,7 @@ export class CredcoopCreateComponent implements OnInit {
       orgaoEmissor: '',
       dataNascimento: '',
       naturalidade: '',
-      nacionalidade: '',
+      nacionalidade: 'Brasileira',
       estadoCivil: '',
       nomeDaMae: '',
       nomeDoPai: '',
