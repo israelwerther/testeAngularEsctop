@@ -13,9 +13,11 @@
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="CPF"
+							<input matInput placeholder="CPF/CNPJ"
 							[(ngModel)]="clienteCredcoop.dadosPessoais.cpf"
-							name="cpf">
+							name="cpf"
+							mask="CPF_CNPJ">
+							<!-- mask="000.000.000-00||00.000.000/0000-00"> -->
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
@@ -152,7 +154,7 @@
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telFixo of clienteCredcoop.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
-							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}"
+							<input mask="(00) 0 0000-0000" matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}"
 							[(ngModel)]="telFixo.numero"
 							name="numeroDoFixo{{indexDoFixo}}">
 							<button class="m-0"(click)="removeForm('removeFixo')" *ngIf="indexDoFixo > 0 && indexDoFixo == clienteCredcoop.contato.fixo.length-1" matSuffix mat-icon-button aria-label="Clear">
