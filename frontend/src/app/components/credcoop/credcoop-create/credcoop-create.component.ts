@@ -158,7 +158,7 @@ export class CredcoopCreateComponent implements OnInit {
         }
       )
     }
-    else if(add == 'fixoTrabalho') {
+    else if(add == 'addFixoTrabalho') {
       this.clienteCredcoop.localDeTrabalho.contato.fixo.push(
         {
           numero: '',
@@ -166,7 +166,7 @@ export class CredcoopCreateComponent implements OnInit {
         }
       )
     }
-    else if(add == 'celularTrabalho') {
+    else if(add == 'addCelularTrabalho') {
       this.clienteCredcoop.localDeTrabalho.contato.celular.push(
         {
           numero: '',
@@ -199,14 +199,22 @@ export class CredcoopCreateComponent implements OnInit {
 
   removeForm(remove: string): void {
     if(remove == 'removeEnderecoPessoal') {
-      this.clienteCredcoop.enderecos.pop(        
-      )
+      this.clienteCredcoop.enderecos.pop()
     }
     else if(remove == 'removeFixo') {
       this.clienteCredcoop.contato.fixo.pop()
     }
     else if(remove == 'removeCelular') {
       this.clienteCredcoop.contato.celular.pop()
+    }
+    else if(remove == 'removeEnderecoTrabalho') {
+      this.clienteCredcoop.localDeTrabalho.enderecos.pop()
+    }
+    else if(remove == 'removeFixoTrabalho') {
+      this.clienteCredcoop.localDeTrabalho.contato.fixo.pop()
+    }
+    else if(remove == 'removeCelularTrabalho') {
+      this.clienteCredcoop.localDeTrabalho.contato.celular.pop()
     }
   }
 

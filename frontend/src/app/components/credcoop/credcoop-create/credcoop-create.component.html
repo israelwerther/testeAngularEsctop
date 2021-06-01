@@ -173,11 +173,8 @@
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telCelular of clienteCredcoop.contato.celular; index as indexDoCelular">
 						<mat-form-field>
-							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}"
-								[(ngModel)]="telCelular.numero" name="numeroDoCelular{{indexDoCelular}}" mask="(00) 0 0000-0000">
-								<button class="m-0" (click)="removeForm('removeCelular')"
-									*ngIf="indexDoCelular > 0 && indexDoCelular == clienteCredcoop.contato.celular.length-1" matSuffix
-									mat-icon-button aria-label="Clear">
+							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}" [(ngModel)]="telCelular.numero" name="numeroDoCelular{{indexDoCelular}}" mask="(00) 0 0000-0000">
+								<button class="m-0" (click)="removeForm('removeCelular')" *ngIf="indexDoCelular > 0 && indexDoCelular == clienteCredcoop.contato.celular.length-1" matSuffix mat-icon-button aria-label="Clear">
 									<i class="material-icons d-flex align-items-center">
 										&times;
 									</i>
@@ -275,6 +272,13 @@
 								name="pontoDeReferencia{{indexDoEndereco}}">
 						</mat-form-field>
 					</div>
+					<div class="col-sm-4">
+						<button class="my-2" (click)="removeForm('removeEnderecoTrabalho')" *ngIf="indexDoEndereco > 0 && indexDoEndereco == clienteCredcoop.localDeTrabalho.enderecos.length-1" matSuffix mat-icon-button aria-label="Clear">
+							<i class="material-icons d-flex align-items-center">
+								&times;
+							</i>							
+						</button>						
+					</div>
 				</div>
 				<div class="row">
 					<div class="col">
@@ -290,12 +294,16 @@
 					<div class="col-sm-2"
 						*ngFor="let telFixo of clienteCredcoop.localDeTrabalho.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
-							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}" [(ngModel)]="telFixo.numero"
-								name="numero{{indexDoFixo}}">
+							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}" [(ngModel)]="telFixo.numero" name="numero{{indexDoFixo}}">
+							<button class="m-0" (click)="removeForm('removeFixoTrabalho')" *ngIf="indexDoFixo > 0 && indexDoFixo == clienteCredcoop.localDeTrabalho.contato.fixo.length-1" matSuffix mat-icon-button aria-label="Clear">
+								<i class="material-icons d-flex align-items-center">
+									&times;
+								</i>
+							</button>
 						</mat-form-field>
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="addForm('fixoTrabalho')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addFixoTrabalho')" color="primary" style="width:100%">
 							+1 Fixo
 						</button>
 					</div>
@@ -305,8 +313,12 @@
 					<div class="col-sm-2"
 						*ngFor="let telCelular of clienteCredcoop.localDeTrabalho.contato.celular; index as indexDoCelular">
 						<mat-form-field>
-							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}"
-								[(ngModel)]="telCelular.numero" name="numero{{indexDoCelular}}">
+							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}" [(ngModel)]="telCelular.numero" name="numero{{indexDoCelular}}">
+							<button class="m-0" (click)="removeForm('removeCelularTrabalho')" *ngIf="indexDoCelular > 0 && indexDoCelular == clienteCredcoop.localDeTrabalho.contato.celular.length-1" matSuffix mat-icon-button aria-label="Clear">
+								<i class="material-icons d-flex align-items-center">
+									&times;
+								</i>
+							</button>
 						</mat-form-field>
 						<mat-checkbox [(ngModel)]="telCelular.whatsapp" name="whatsapp{{indexDoCelular}}">
 							Whatsapp
@@ -318,7 +330,7 @@
 						</mat-checkbox>
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="addForm('celularTrabalho')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addCelularTrabalho')" color="primary" style="width:100%">
 							+1 Celular
 						</button>
 					</div>
