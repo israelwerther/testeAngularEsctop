@@ -370,34 +370,37 @@
 							CONTA BANCÁRIA {{indexDoDadoBancario == 0 ? '1':indexDoDadoBancario+1}}
 						</mat-card-title>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<mat-form-field>
 							<input matInput placeholder="Banco" [(ngModel)]="dadoBancario.banco" name="banco{{indexDoDadoBancario}}">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="Nº da Operação" [(ngModel)]="dadoBancario.numeroDaOperacao"
-								name="numeroDaOperacao{{indexDoDadoBancario}}">
+							<input matInput placeholder="Nº da Operação" [(ngModel)]="dadoBancario.numeroDaOperacao" name="numeroDaOperacao{{indexDoDadoBancario}}">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="Tipo de Conta" [(ngModel)]="dadoBancario.tipoDeConta"
-								name="tipoDeConta{{indexDoDadoBancario}}">
+							<input matInput placeholder="Tipo de Conta" [(ngModel)]="dadoBancario.tipoDeConta" name="tipoDeConta{{indexDoDadoBancario}}">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="Nº da Agência" [(ngModel)]="dadoBancario.numeroDaAgencia"
-								name="numeroDaAgencia{{indexDoDadoBancario}}">
+							<input matInput placeholder="Nº da Agência" [(ngModel)]="dadoBancario.numeroDaAgencia" name="numeroDaAgencia{{indexDoDadoBancario}}">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="Nº da Conta" [(ngModel)]="dadoBancario.numeroDaconta"
-								name="numeroDaconta{{indexDoDadoBancario}}">
+							<input matInput placeholder="Nº da Conta" [(ngModel)]="dadoBancario.numeroDaconta" name="numeroDaconta{{indexDoDadoBancario}}">
 						</mat-form-field>
+					</div>
+					<div class="col-sm-1">
+						<button class="my-2" (click)="removeForm('removeContaBancaria')" *ngIf="indexDoDadoBancario > 0 && indexDoDadoBancario == clienteCredcoop.dadosBancarios.length-1" matSuffix mat-icon-button aria-label="Clear">
+							<i class="material-icons d-flex align-items-center">
+								&times;
+							</i>							
+						</button>						
 					</div>
 				</div>
 				<div class="row">

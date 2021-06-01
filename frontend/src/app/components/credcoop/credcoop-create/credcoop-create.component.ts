@@ -216,6 +216,9 @@ export class CredcoopCreateComponent implements OnInit {
     else if(remove == 'removeCelularTrabalho') {
       this.clienteCredcoop.localDeTrabalho.contato.celular.pop()
     }
+    else if(remove == 'removeContaBancaria') {
+      this.clienteCredcoop.dadosBancarios.pop()
+    }
   }
 
   createClienteCredcoop(): void {
