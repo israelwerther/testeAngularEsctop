@@ -40,6 +40,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { NgxMaskModule } from 'ngx-mask';
+import { FunctionCepComponent } from './components/function/function-cep/function-cep.component';
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -60,6 +61,7 @@ import { NgxMaskModule } from 'ngx-mask';
     EmprestimoCreateComponent,
     ProductReadComponent,
     ProductRead2Component,
+    FunctionCepComponent,
   ],
   imports: [
     BrowserModule,
