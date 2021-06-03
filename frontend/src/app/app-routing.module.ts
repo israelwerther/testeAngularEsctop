@@ -1,4 +1,4 @@
-import { FunctionCepComponent } from './components/function/function-cep/function-cep.component';
+import { CepComponent } from './functions/cep/cep/cep.component';
 import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
 import { EsctopCreateComponent } from './components/esctop/esctop-create/esctop-create.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
@@ -50,9 +50,9 @@ const routes: Routes = [
     component: EmprestimoCreateComponent
   },
   {
-    path: 'function/cep',
-    component: FunctionCepComponent
-  }
+    path: 'consulta/cep',
+    component: CepComponent
+  },
 ];
 
 @NgModule({

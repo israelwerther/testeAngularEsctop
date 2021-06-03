@@ -8,17 +8,17 @@ import { Router } from '@angular/router';
 })
 export class CredcoopCrudComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private Router: Router) { }
 
   ngOnInit(): void {
   }
 
   navigateToCredcoopCreate(): void {
-    this.router.navigate(['/credcoop/create'])
-  } 
-
-  navigateToCep(): void {
-    this.router.navigate(['/function/cep'])
+    this.Router.navigate(['/credcoop/create'])
+  }
+  
+  navigateToConsultaCep(): void {
+    this.Router.navigate(['/consulta/cep'])
   }
 
 }

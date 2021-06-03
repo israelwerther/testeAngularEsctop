@@ -88,6 +88,7 @@
 					</div>
 				</div>
 
+				<form #f="ngForm">
 				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">
 					<div class="col-sm-12">
 						<mat-card-title class="w-100"> ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}</mat-card-title>
@@ -142,6 +143,7 @@
 						</button>						
 					</div>
 				</div>
+			</form>
 				<div class="row">
 					<div class="col">
 						<button mat-raised-button (click)="addForm('addEnderecoPessoal')" color="primary" style="width:100%">
