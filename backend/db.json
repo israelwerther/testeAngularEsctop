@@ -3,21 +3,21 @@
   "clienteCredcoop": [
     {
       "dadosPessoais": {
-        "nome": "Con",
-        "cpf": "06334411470",
-        "rg": "Rec",
-        "orgaoEmissor": "Qui",
-        "dataNascimento": "1975-10-07",
-        "naturalidade": "Err",
-        "nacionalidade": "Eiu",
-        "estadoCivil": "Sin",
-        "nomeDaMae": "Qua",
-        "nomeDoPai": "Qui"
+        "nome": "",
+        "cpf": "",
+        "rg": "",
+        "orgaoEmissor": "",
+        "dataNascimento": "",
+        "naturalidade": "",
+        "nacionalidade": "Brasileira",
+        "estadoCivil": "",
+        "nomeDaMae": "",
+        "nomeDoPai": ""
       },
       "dadosConjuge": {
-        "nomeConjuge": "Des",
-        "cpfConjuge": "21213123123",
-        "contatoConjuge": "Eli"
+        "nomeConjuge": "",
+        "cpfConjuge": "",
+        "contatoConjuge": ""
       },
       "enderecos": [
         {
@@ -26,18 +26,38 @@
           "bairro": "Igapó",
           "uf": "RN",
           "cidade": "Natal",
-          "numero": "Vel",
+          "numero": "",
           "complemento": "",
-          "pontoDeReferencia": "Vol"
+          "pontoDeReferencia": ""
         },
         {
-          "cep": "59031-000",
-          "rua": "Avenida Coronel Estevam",
-          "bairro": "Alecrim",
+          "cep": "59106-000",
+          "rua": "Rua Presidente Médici",
+          "bairro": "Igapó",
           "uf": "RN",
           "cidade": "Natal",
           "numero": "",
-          "complemento": "de 379/380 a 765/766",
+          "complemento": "",
+          "pontoDeReferencia": ""
+        },
+        {
+          "cep": "59106-000",
+          "rua": "Rua Presidente Médici",
+          "bairro": "Igapó",
+          "uf": "RN",
+          "cidade": "Natal",
+          "numero": "",
+          "complemento": "",
+          "pontoDeReferencia": ""
+        },
+        {
+          "cep": "",
+          "rua": "",
+          "bairro": "",
+          "uf": "",
+          "cidade": "",
+          "numero": "",
+          "complemento": "",
           "pontoDeReferencia": ""
         }
       ],
@@ -52,10 +72,10 @@
           {
             "numero": "",
             "ativo": true,
-            "whatsapp": true
+            "whatsapp": false
           }
         ],
-        "email": "vityjo@mailinator.com"
+        "email": ""
       },
       "localDeTrabalho": {
         "nomeFantasia": "",
