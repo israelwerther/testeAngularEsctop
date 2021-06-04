@@ -1,8 +1,8 @@
+import { CepService } from './../../../functions/cep/cep.service';
 import { ClienteCredcoop } from './../clienteCredcoop.model';
 import { ClienteCredcoopService } from './../cliente-credcoop.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-
 
 @Component({
   selector: 'app-credcoop-create',
@@ -10,8 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./credcoop-create.component.css']
 })
 
-export class CredcoopCreateComponent implements OnInit {
-  
+export class CredcoopCreateComponent implements OnInit {  
   clienteCredcoop: ClienteCredcoop = {
     dadosPessoais: {
       nome: '',
@@ -104,8 +103,7 @@ export class CredcoopCreateComponent implements OnInit {
     }],    
   }
 
-  constructor(private clienteCredcoopService: ClienteCredcoopService,
-    private router: Router) { }
+  constructor(private clienteCredcoopService: ClienteCredcoopService, private router: Router, private cepService: CepService) { }
 
   ngOnInit(): void {
     
@@ -234,4 +232,28 @@ export class CredcoopCreateComponent implements OnInit {
   cancel(): void {
     this.router.navigate(['/credcoop'])
   }
+
+  consultaCep(valor: string, form: any, indice: number){
+    this.cepService.buscar(valor).subscribe((dados) => this.populaForm(dados, form, indice));
+    // console.log(valor, form, indice)
+  }
+
+  populaForm(dados: any, form: any, indice: any) {
+    console.log(form)
+    form.controls[`cep${indice}`].setValue(dados.cep)
+    form.controls[`rua${indice}`].setValue(dados.logradouro)
+    form.controls[`bairro${indice}`].setValue(dados.bairro)
+    form.controls[`cidade${indice}`].setValue(dados.localidade)
+    form.controls[`uf${indice}`].setValue(dados.uf)
+    form.controls[`complemento${indice}`].setValue(dados.complemento)
+    // form.setValue({
+    //   cep0: dados.cep,
+    //   logradouro0: dados.logradouro,
+    //   bairro0: dados.bairro,
+    //   cidade0: dados.localidade,
+    //   uf0: dados.uf,   
+    //   complemento0: dados.complemento,
+    // })
+  }
+  
 }

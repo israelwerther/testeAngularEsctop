@@ -95,7 +95,8 @@
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="CEP" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}">
+							<input matInput #cep placeholder="CEP" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}" 
+							(blur)="consultaCep(cep.value , f, indexDoEndereco)">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">

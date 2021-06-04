@@ -1,6 +1,111 @@
 {
   "products": [],
   "clienteCredcoop": [
-    
+    {
+      "dadosPessoais": {
+        "nome": "Con",
+        "cpf": "06334411470",
+        "rg": "Rec",
+        "orgaoEmissor": "Qui",
+        "dataNascimento": "1975-10-07",
+        "naturalidade": "Err",
+        "nacionalidade": "Eiu",
+        "estadoCivil": "Sin",
+        "nomeDaMae": "Qua",
+        "nomeDoPai": "Qui"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Des",
+        "cpfConjuge": "21213123123",
+        "contatoConjuge": "Eli"
+      },
+      "enderecos": [
+        {
+          "cep": "59106-105",
+          "rua": "Rua Esperança",
+          "bairro": "Igapó",
+          "uf": "RN",
+          "cidade": "Natal",
+          "numero": "Vel",
+          "complemento": "",
+          "pontoDeReferencia": "Vol"
+        },
+        {
+          "cep": "59031-000",
+          "rua": "Avenida Coronel Estevam",
+          "bairro": "Alecrim",
+          "uf": "RN",
+          "cidade": "Natal",
+          "numero": "",
+          "complemento": "de 379/380 a 765/766",
+          "pontoDeReferencia": ""
+        }
+      ],
+      "contato": {
+        "fixo": [
+          {
+            "numero": "",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "",
+            "ativo": true,
+            "whatsapp": true
+          }
+        ],
+        "email": "vityjo@mailinator.com"
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "contato": {
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ],
+          "email": ""
+        },
+        "observacoes": ""
+      },
+      "dadosBancarios": [
+        {
+          "banco": "",
+          "numeroDaOperacao": "",
+          "tipoDeConta": "",
+          "numeroDaAgencia": "",
+          "numeroDaconta": ""
+        }
+      ],
+      "referencias": [
+        {
+          "nome": "",
+          "contato": "",
+          "parentesco": ""
+        }
+      ],
+      "id": 1
+    }
   ]
 }

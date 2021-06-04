@@ -1,31 +1,32 @@
 <form #f="ngForm">
-    <div class="form-group">
-        <div class="row">            
-            <div class="col-sm-6">
-                <label for="cep">CEP</label><br>
-                <input type="text" class="form-control" id="cep" name="cep" ngModel #cep="ngModel" (blur)="consultaCep(cep.value , f)">
-            </div>
-            <div class="col-sm-6">
-                <label for="logradouro">logradouro</label><br>
-                <input type="text" class="form-control" id="logradouro" name="logradouro" ngModel #logradouro="ngModel" >                
-            </div>
-            <!-- <div class="col-sm-6">
-                <label for="bairro">bairro</label><br>
-                <input type="text" class="form-control" id="bairro" name="bairro"  ngModel #bairro="ngModel">                
-            </div>
-            <div class="col-sm-6">
-                <label for="cidade">cidade</label><br>
-                <input type="text" class="form-control" id="cidade" name="cidade"  ngModel #cidade="ngModel">                
-            </div>
-            <div class="col-sm-6">
-                <label for="uf">uf</label><br>
-                <input type="text" class="form-control" id="uf" name="uf" ngModel #uf="ngModel">                
-            </div>
-            <div class="col-sm-6">
-                <label for="complemento">complemento</label><br>
-                <input type="text" class="form-control" id="complemento" name="complemento" ngModel #complemento="ngModel">                
-            </div> -->
-        </div>
-    </div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-sm-6">
+				<label for="cep">CEP</label><br>
+				<input type="text" class="form-control" id="cep" name="cep" ngModel #cep="ngModel"
+					(blur)="consultaCep(cep.value , f)">
+			</div>
+			<div class="col-sm-6">
+				<label for="logradouro">logradouro</label><br>
+				<input type="text" class="form-control" id="logradouro" name="logradouro" ngModel #logradouro="ngModel">
+			</div>
+			<div class="col-sm-6">
+				<label for="bairro">bairro</label><br>
+				<input type="text" class="form-control" id="bairro" name="bairro" ngModel #bairro="ngModel">
+			</div>
+			<div class="col-sm-6">
+				<label for="cidade">cidade</label><br>
+				<input type="text" class="form-control" id="cidade" name="cidade" ngModel #cidade="ngModel">
+			</div>
+			<div class="col-sm-6">
+				<label for="uf">uf</label><br>
+				<input type="text" class="form-control" id="uf" name="uf" ngModel #uf="ngModel">
+			</div>
+			<div class="col-sm-6">
+				<label for="complemento">complemento</label><br>
+				<input type="text" class="form-control" id="complemento" name="complemento" ngModel #complemento="ngModel">
+			</div>
+		</div>
+	</div>
 
 </form>

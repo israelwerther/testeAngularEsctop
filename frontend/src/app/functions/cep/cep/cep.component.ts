@@ -8,7 +8,7 @@ import { CepService } from '../cep.service';
 })
 export class CepComponent {
 
-  constructor(private cepService: CepService) { }  
+  constructor(private cepService: CepService) { }
 
   consultaCep(valor: string, form: any){
     this.cepService.buscar(valor).subscribe((dados) => this.populaForm(dados, form));
