@@ -1,8 +1,8 @@
-import { CepService } from './../../../functions/cep/cep.service';
+import { CepService } from '../../../services/correios/cep.service';
 import { ClienteCredcoop } from './../clienteCredcoop.model';
 import { ClienteCredcoopService } from './../cliente-credcoop.service';
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-credcoop-create',
@@ -101,7 +101,7 @@ export class CredcoopCreateComponent implements OnInit {
       contato: '',
       parentesco: '',      
     }],    
-  }
+  };
 
   constructor(private clienteCredcoopService: ClienteCredcoopService, private router: Router, private cepService: CepService) { }
 
@@ -123,7 +123,7 @@ export class CredcoopCreateComponent implements OnInit {
           complemento: '',
           pontoDeReferencia: '',
         }
-      )
+      );
     }
     else if(add == 'addFixo') {
       this.clienteCredcoop.contato.fixo.push(
@@ -131,7 +131,7 @@ export class CredcoopCreateComponent implements OnInit {
           numero: '',
           ativo: true
         }
-      )
+      );
     }
     else if(add == 'addCelular') {
       this.clienteCredcoop.contato.celular.push(
@@ -140,7 +140,7 @@ export class CredcoopCreateComponent implements OnInit {
           ativo: true,
           whatsapp: false
         }
-      )
+      );
     }
     else if(add == 'addEnderecoTrabalho') {
       this.clienteCredcoop.localDeTrabalho.enderecos.push(
@@ -154,7 +154,7 @@ export class CredcoopCreateComponent implements OnInit {
           complemento: '',
           pontoDeReferencia: '',
         }
-      )
+      );
     }
     else if(add == 'addFixoTrabalho') {
       this.clienteCredcoop.localDeTrabalho.contato.fixo.push(
@@ -162,7 +162,7 @@ export class CredcoopCreateComponent implements OnInit {
           numero: '',
           ativo: true
         }
-      )
+      );
     }
     else if(add == 'addCelularTrabalho') {
       this.clienteCredcoop.localDeTrabalho.contato.celular.push(
@@ -171,7 +171,7 @@ export class CredcoopCreateComponent implements OnInit {
           ativo: true,
           whatsapp: false
         }
-      )
+      );
     }
     else if(add == 'addContaBancaria') {
       this.clienteCredcoop.dadosBancarios.push(
@@ -182,7 +182,7 @@ export class CredcoopCreateComponent implements OnInit {
           numeroDaAgencia: '',
           numeroDaconta: '',
         }
-      )
+      );
     }
     else if(add == 'addReferencia') {
       this.clienteCredcoop.referencias.push(
@@ -191,69 +191,60 @@ export class CredcoopCreateComponent implements OnInit {
           contato: '',
           parentesco: '',          
         }
-      )
+      );
     }
   }
 
   removeForm(remove: string): void {
     if(remove == 'removeEnderecoPessoal') {
-      this.clienteCredcoop.enderecos.pop()
+      this.clienteCredcoop.enderecos.pop();
     }
     else if(remove == 'removeFixo') {
-      this.clienteCredcoop.contato.fixo.pop()
+      this.clienteCredcoop.contato.fixo.pop();
     }
     else if(remove == 'removeCelular') {
-      this.clienteCredcoop.contato.celular.pop()
+      this.clienteCredcoop.contato.celular.pop();
     }
     else if(remove == 'removeEnderecoTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.enderecos.pop()
+      this.clienteCredcoop.localDeTrabalho.enderecos.pop();
     }
     else if(remove == 'removeFixoTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.contato.fixo.pop()
+      this.clienteCredcoop.localDeTrabalho.contato.fixo.pop();
     }
     else if(remove == 'removeCelularTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.contato.celular.pop()
+      this.clienteCredcoop.localDeTrabalho.contato.celular.pop();
     }
     else if(remove == 'removeContaBancaria') {
-      this.clienteCredcoop.dadosBancarios.pop()
+      this.clienteCredcoop.dadosBancarios.pop();
     }
     else if(remove == 'removeReferencia') {
-      this.clienteCredcoop.referencias.pop()
+      this.clienteCredcoop.referencias.pop();
     }
   }
 
   createClienteCredcoop(): void {
     this.clienteCredcoopService.create(this.clienteCredcoop).subscribe(() => {
-      this.clienteCredcoopService.showMessage('Cliente Criado com Sucesso!')
-      this.router.navigate(['/credcoop'])
-    })
+      this.clienteCredcoopService.showMessage('Cliente Criado com Sucesso!');
+      this.router.navigate(['/credcoop']);
+    });
   }
 
   cancel(): void {
-    this.router.navigate(['/credcoop'])
+    this.router.navigate(['/credcoop']);
   }
 
   consultaCep(valor: string, form: any, indice: number){
     this.cepService.buscar(valor).subscribe((dados) => this.populaForm(dados, form, indice));
-    // console.log(valor, form, indice)
   }
 
   populaForm(dados: any, form: any, indice: any) {
-    console.log(form)
+    console.log(form);
     form.controls[`cep${indice}`].setValue(dados.cep)
     form.controls[`rua${indice}`].setValue(dados.logradouro)
     form.controls[`bairro${indice}`].setValue(dados.bairro)
     form.controls[`cidade${indice}`].setValue(dados.localidade)
     form.controls[`uf${indice}`].setValue(dados.uf)
     form.controls[`complemento${indice}`].setValue(dados.complemento)
-    // form.setValue({
-    //   cep0: dados.cep,
-    //   logradouro0: dados.logradouro,
-    //   bairro0: dados.bairro,
-    //   cidade0: dados.localidade,
-    //   uf0: dados.uf,   
-    //   complemento0: dados.complemento,
-    // })
   }
   
 }

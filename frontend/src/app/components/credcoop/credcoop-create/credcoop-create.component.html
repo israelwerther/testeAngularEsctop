@@ -67,7 +67,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-sm-4">
 						<mat-form-field>
 							<input matInput placeholder="Nome do Cônjuge" [(ngModel)]="clienteCredcoop.dadosConjuge.nomeConjuge"
 								name="nomeConjuge">
@@ -83,7 +83,7 @@
 					<div class="col-sm-2">
 						<mat-form-field>
 							<input matInput placeholder="Contato do Cônjuge" [(ngModel)]="clienteCredcoop.dadosConjuge.contatoConjuge"
-								name="contatoConjuge">
+								name="contatoConjuge" mask="(00) 0000-0000 || (00) 0 0000-0000">
 						</mat-form-field>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput #cep placeholder="CEP" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}" 
+							<input matInput #cep placeholder="CEP" mask="00000-000" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}" 
 							(blur)="consultaCep(cep.value , f, indexDoEndereco)">
 						</mat-form-field>
 					</div>
