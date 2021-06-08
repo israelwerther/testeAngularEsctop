@@ -28,6 +28,7 @@ export class CredcoopCreateComponent implements OnInit {
       nomeConjuge: '',
       cpfConjuge: '',
       contatoConjuge: '',
+      whatsapp: false,
     },
     enderecos: [
       {

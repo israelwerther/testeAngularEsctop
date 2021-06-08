@@ -21,6 +21,7 @@ export interface ClienteCredcoop {
         nomeConjuge: string;
         cpfConjuge: string;
         contatoConjuge: string;
+        whatsapp: boolean;
     };
     enderecos: [
         EnderecoCredcoop
