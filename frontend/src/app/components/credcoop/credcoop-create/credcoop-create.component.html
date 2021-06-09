@@ -93,15 +93,16 @@
 						</mat-checkbox>
 					</div>
 				</div>
+			</form>
 
-				<form #f="ngForm">
+			<form #f="ngForm">
 				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">
 					<div class="col-sm-12">
 						<mat-card-title class="w-100"> ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}</mat-card-title>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput #cep placeholder="CEP" mask="00000-000" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}" 
+							<input matInput #cep placeholder="CEP" mask="00000-000" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}"
 							(blur)="consultaCep(cep.value , f, indexDoEndereco)">
 						</mat-form-field>
 					</div>
@@ -149,8 +150,7 @@
 							</i>							
 						</button>						
 					</div>
-				</div>
-			</form>
+				</div>				
 				<div class="row">
 					<div class="col">
 						<button mat-raised-button (click)="addForm('addEnderecoPessoal')" color="primary" style="width:100%">
@@ -159,7 +159,9 @@
 					</div>
 				</div>
 				<br>
-
+			</form>
+			
+			<form>
 				<mat-card-title>CONTATO</mat-card-title>
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telFixo of clienteCredcoop.contato.fixo; index as indexDoFixo">
