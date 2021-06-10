@@ -12,15 +12,10 @@ button {
     overflow: auto;  
 }
 mat-card-title {
-    background-color: rgb(233, 233, 233);
+    background-color: #3f51b5;
     padding: 5px;
 }
-/* posiciona mais proximo a checkbox do numero  */
-.whatsapp-margin{
-    /* position: absolute;
-    margin-top: -20px; */
-    border: 1px solid black;
-}
+
 /* 
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
     background-color: #41b53f;

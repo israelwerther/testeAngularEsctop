@@ -1,8 +1,10 @@
-<mat-tab-group mat-align-tabs="start">
-	<mat-tab label="Dados Pessoais">
+<mat-tab-group mat-align-tabs="start" class="border border-danger">
+	<mat-tab label="Dados Pessoais" >
 		<mat-card>
-			<form>
-				<mat-card-title>DADOS DO CLIENTE</mat-card-title>
+			<form class="border border-success">
+				<div class="col-sm-12">
+					<mat-card-title>DADOS DO CLIENTE</mat-card-title>
+				</div>
 				<div class="row">
 					<div class="col-sm-4">
 						<mat-form-field>
@@ -98,9 +100,7 @@
 			<form #f="ngForm">
 				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">
 					<div class="col-sm-12">
-						<mat-card-title class="w-100"> 
-							ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}
-						</mat-card-title>
+						<mat-card-title class="w-100">ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}</mat-card-title>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
@@ -171,7 +171,9 @@
 			</form>
 			
 			<form>
-				<mat-card-title>CONTATO</mat-card-title>
+				<div class="col-sm-12">
+					<mat-card-title>CONTATO</mat-card-title>
+				</div>
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telFixo of clienteCredcoop.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
@@ -221,13 +223,18 @@
 					</div>
 				</div>
 			</form>
-			<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
-				Salvar
-			</button>
-			<button mat-raised-button (click)="cancel()">
-				Cancelar
-			</button>
+
+			<div class="col-sm-12">
+				<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
+					Salvar
+				</button>
+				<button mat-raised-button (click)="cancel()">
+					Cancelar
+				</button>
+			</div>
+
 			<mat-divider></mat-divider>
+
 		</mat-card>
 	</mat-tab>
 
@@ -321,7 +328,9 @@
 			</form>
 
 			<form>
-				<mat-card-title>CONTATO</mat-card-title>
+				<div class="col-sm-12">
+					<mat-card-title class="w-100">CONTATO</mat-card-title>
+				</div>
 				<div class="row">
 					<div class="col-sm-2"
 						*ngFor="let telFixo of clienteCredcoop.localDeTrabalho.contato.fixo; index as indexDoFixo">
