@@ -1,5 +1,112 @@
 {
   "products": [],
-  "clienteCredcoop": [    
+  "clienteCredcoop": [
+    {
+      "dadosPessoais": {
+        "nome": "Lab",
+        "cpf": "",
+        "rg": "Ten",
+        "orgaoEmissor": "Eli",
+        "dataNascimento": "1979-08-22",
+        "naturalidade": "Ut ",
+        "nacionalidade": "Inv",
+        "estadoCivil": "Ips",
+        "nomeDaMae": "Eiu",
+        "nomeDoPai": "Off"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Id",
+        "cpfConjuge": "",
+        "contatoConjuge": "",
+        "whatsapp": true
+      },
+      "enderecos": [
+        {
+          "cep": "",
+          "rua": "Eni",
+          "bairro": "Id ",
+          "uf": "Imp",
+          "cidade": "Nec",
+          "numero": "Exp",
+          "complemento": "Est",
+          "pontoDeReferencia": "Qui"
+        },
+        {
+          "cep": "",
+          "rua": "Dol",
+          "bairro": "Eli",
+          "uf": "Est",
+          "cidade": "Eni",
+          "numero": "Est",
+          "complemento": "Exe",
+          "pontoDeReferencia": "Eni"
+        }
+      ],
+      "contato": {
+        "fixo": [
+          {
+            "numero": "",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "",
+            "ativo": true,
+            "whatsapp": true
+          }
+        ],
+        "email": "seqyjiwuw@mailinator.com"
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "contato": {
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ],
+          "email": ""
+        },
+        "observacoes": ""
+      },
+      "dadosBancarios": [
+        {
+          "banco": "",
+          "numeroDaOperacao": "",
+          "tipoDeConta": "",
+          "numeroDaAgencia": "",
+          "numeroDaconta": ""
+        }
+      ],
+      "referencias": [
+        {
+          "nome": "",
+          "contato": "",
+          "parentesco": ""
+        }
+      ],
+      "id": 1
+    }
   ]
 }

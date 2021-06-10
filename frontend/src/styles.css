@@ -11,6 +11,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     vertical-align: middle;
 }
 
+.row {
+    /* resetei as margens do bootstrap */
+    margin: 0;
+}
+
 /* margem negativa */
 /* .mntop-1 {   
     margin-top: -20px;

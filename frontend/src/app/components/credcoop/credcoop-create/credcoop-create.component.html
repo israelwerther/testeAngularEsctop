@@ -1,8 +1,8 @@
 <mat-tab-group mat-align-tabs="start">
 	<mat-tab label="Dados Pessoais">
 		<mat-card>
-			<mat-card-title>DADOS DO CLIENTE</mat-card-title>
 			<form>
+				<mat-card-title>DADOS DO CLIENTE</mat-card-title>
 				<div class="row">
 					<div class="col-sm-4">
 						<mat-form-field>
@@ -98,17 +98,26 @@
 			<form #f="ngForm">
 				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">
 					<div class="col-sm-12">
-						<mat-card-title class="w-100"> ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}</mat-card-title>
+						<mat-card-title class="w-100"> 
+							ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}
+						</mat-card-title>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput #cep placeholder="CEP" mask="00000-000" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}"
+							<input matInput
+							#cep
+							placeholder="CEP"
+							mask="00000-000" 
+							[(ngModel)]="endereco.cep" 
+							name="cep{{indexDoEndereco}}"
 							(blur)="consultaCep(cep.value , f, indexDoEndereco)">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-5">
 						<mat-form-field>
-							<input matInput placeholder="Rua" [(ngModel)]="endereco.rua" name="rua{{indexDoEndereco}}">
+							<input matInput placeholder="Rua"
+							[(ngModel)]="endereco.rua"
+							name="rua{{indexDoEndereco}}">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-5">
@@ -234,19 +243,31 @@
 						</mat-form-field>
 					</div>
 				</div>
+			</form>
 
+			<form #g="ngForm">
 				<div class="row" *ngFor="let endereco of clienteCredcoop.localDeTrabalho.enderecos; index as indexDoEndereco">
 					<div class="col-sm-12">
-						<mat-card-title class="w-100"> ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}</mat-card-title>
+						<mat-card-title class="w-100"> 
+							ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}
+						</mat-card-title>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
-							<input matInput placeholder="CEP" [(ngModel)]="endereco.cep" name="cep{{indexDoEndereco}}">
+							<input matInput
+							#cep
+							placeholder="CEP"
+							mask="00000-000"
+							[(ngModel)]="endereco.cep"
+							name="cep{{indexDoEndereco}}"
+							(blur)="consultaCep(cep.value , g, indexDoEndereco)">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-5">
 						<mat-form-field>
-							<input matInput placeholder="Rua" [(ngModel)]="endereco.rua" name="rua{{indexDoEndereco}}">
+							<input matInput placeholder="Rua"
+							[(ngModel)]="endereco.rua"
+							name="rua{{indexDoEndereco}}">
 						</mat-form-field>
 					</div>
 					<div class="col-sm-5">
@@ -297,7 +318,9 @@
 					</div>
 				</div>
 				<br>
+			</form>
 
+			<form>
 				<mat-card-title>CONTATO</mat-card-title>
 				<div class="row">
 					<div class="col-sm-2"
