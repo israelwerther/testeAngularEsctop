@@ -357,7 +357,7 @@
 					<div class="col-sm-2"
 						*ngFor="let telFixo of clienteCredcoop.localDeTrabalho.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
-							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}" [(ngModel)]="telFixo.numero" name="numero{{indexDoFixo}}">
+							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}" [(ngModel)]="telFixo.numero" name="numero{{indexDoFixo}}" mask="(00) 0000-0000">
 							<button class="my-2 close-button"
 							(click)="removeForm('removeFixoTrabalho')"
 							*ngIf="indexDoFixo > 0 && indexDoFixo == clienteCredcoop.localDeTrabalho.contato.fixo.length-1"
@@ -379,7 +379,7 @@
 					<div class="col-sm-2"
 						*ngFor="let telCelular of clienteCredcoop.localDeTrabalho.contato.celular; index as indexDoCelular">
 						<mat-form-field>
-							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}" [(ngModel)]="telCelular.numero" name="numero{{indexDoCelular}}">
+							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}" [(ngModel)]="telCelular.numero" name="numero{{indexDoCelular}}" mask="(00) 0 0000-0000">
 							<button class="my-2 close-button"
 							(click)="removeForm('removeCelularTrabalho')"
 							*ngIf="indexDoCelular > 0 && indexDoCelular == clienteCredcoop.localDeTrabalho.contato.celular.length-1"
