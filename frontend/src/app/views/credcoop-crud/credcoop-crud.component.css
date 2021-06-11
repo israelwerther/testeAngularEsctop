@@ -7,7 +7,7 @@
     border-radius: 0px;
     padding: 48px 0px;
     margin-bottom: 0;
-    background: linear-gradient(90deg, #003d7a 0%, #3273a2 100%);
+    background: linear-gradient(90deg, #00255c 0%, #004066 100%);
 }
 
 .jumbotron:hover {
@@ -16,5 +16,5 @@
     -moz-box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.9);
     cursor: pointer;    
     transform: scale(1.03);
-    background: linear-gradient(90deg, #3273a2 0%, #91b2cf 100%);
+    background: linear-gradient(90deg, #004066 0%, #256274 100%);
 }

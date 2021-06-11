@@ -7,14 +7,37 @@ input {
 }
 button {
     margin: 20px 15px 0px 0px;
+    background-color: #004066;
+    color: #ecfdeb;
 }
 .mat-card{
     overflow: auto;  
 }
 mat-card-title {
-    background-color: #3f51b5;
+    background: #75848780;
+    color: #000000;
     padding: 5px;
+    margin-top: 5px; 
 }
+
+.shadow-form {
+    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.68);
+    -moz-box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.68);
+    border: 1px solid rgb(133, 133, 133);
+    margin-top: 15px;    
+}
+
+.close-button {
+    color:black;
+    background-color: rgb(255, 255, 255);
+}
+
+.color1 {color: #00255c;}
+.color2 {color: #004066;}
+.color3 {color: #256274;}
+.color4 {color: #758487;}
+.color5 {color: #ae9e9e;}
 
 /* 
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
