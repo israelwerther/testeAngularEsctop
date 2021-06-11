@@ -9,6 +9,8 @@
 mat-nav-list a:hover {
     color: #ae9e9e;
     background-color:#004066;
+    transform: scale(1.03);
+    background: linear-gradient(90deg, #004066 0%, #256274 100%);
 }
 
 .sidenav i {
