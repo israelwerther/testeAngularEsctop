@@ -20,17 +20,14 @@ mat-card-title {
     margin-top: 5px; 
 }
 
-.shadow-form {
-    box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.68);
-    -webkit-box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.68);
-    -moz-box-shadow: 8px 9px 5px -6px rgba(0,0,0,0.68);
-    border: 1px solid rgb(133, 133, 133);
-    margin-top: 15px;    
-}
-
 .close-button {
     color:black;
     background-color: rgb(255, 255, 255);
+}
+
+.save-form {       
+    display: flex;
+    justify-content: flex-end;        
 }
 
 .color1 {color: #00255c;}

@@ -1,9 +1,11 @@
 <mat-tab-group mat-align-tabs="start" class="">
 	<mat-tab label="Dados Pessoais" >
 		<mat-card>
-			<form class=" shadow-form">
-				<div class="col-sm-12">
-					<mat-card-title>DADOS DO CLIENTE</mat-card-title>
+			<form class="mat-elevation-z5">
+				<div class="row">
+					<div class="col-sm-12">
+						<mat-card-title class="w-100">DADOS DO CLIENTE</mat-card-title>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-4">
@@ -14,8 +16,7 @@
 					<div class="col-sm-2">
 						<mat-form-field>
 							<input matInput placeholder="CPF/CNPJ" [(ngModel)]="clienteCredcoop.dadosPessoais.cpf" name="cpf"
-								mask="CPF_CNPJ">
-							<!-- mask="000.000.000-00||00.000.000/0000-00"> -->
+								mask="CPF_CNPJ">							  
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">
@@ -94,11 +95,11 @@
 							</svg>
 						</mat-checkbox>
 					</div>
-				</div>
+				</div>				
 			</form>
 
-			<form class=" shadow-form" #f="ngForm">
-				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">
+			<form class="mat-elevation-z5 mt-3" #f="ngForm">
+				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">					
 					<div class="col-sm-12">
 						<mat-card-title class="w-100">ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}</mat-card-title>
 					</div>
@@ -173,15 +174,17 @@
 				<br>
 			</form>
 			
-			<form class=" shadow-form">
-				<div class="col-sm-12">
-					<mat-card-title>CONTATO</mat-card-title>
+			<form class="mat-elevation-z5 mt-3">
+				<div class="row">
+					<div class="col-sm-12">
+						<mat-card-title>CONTATO</mat-card-title>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-2" *ngFor="let telFixo of clienteCredcoop.contato.fixo; index as indexDoFixo">
 						<mat-form-field>
 							<input matInput placeholder="Fixo {{indexDoFixo == 0 ? '1':indexDoFixo+1}}" [(ngModel)]="telFixo.numero" name="numeroDoFixo{{indexDoFixo}}" mask="(00) 0000-0000">
-							<button class="m-0"
+							<button class="my-2 close-button"
 							(click)="removeForm('removeFixo')" 
 							*ngIf="indexDoFixo > 0 && indexDoFixo == clienteCredcoop.contato.fixo.length-1" 
 							matSuffix mat-icon-button aria-label="Clear">
@@ -192,7 +195,7 @@
 						</mat-form-field>
 					</div>
 					<div class="col-sm">
-						<button mat-raised-button (click)="addForm('addFixo')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addFixo')" style="width:100%">
 							+1 Fixo
 						</button>
 					</div>
@@ -202,7 +205,10 @@
 					<div class="col-sm-2" *ngFor="let telCelular of clienteCredcoop.contato.celular; index as indexDoCelular">
 						<mat-form-field>
 							<input matInput placeholder="Celular {{indexDoCelular == 0 ? '1':indexDoCelular+1}}" [(ngModel)]="telCelular.numero" name="numeroDoCelular{{indexDoCelular}}" mask="(00) 0 0000-0000">
-								<button class="m-0" (click)="removeForm('removeCelular')" *ngIf="indexDoCelular > 0 && indexDoCelular == clienteCredcoop.contato.celular.length-1" matSuffix mat-icon-button aria-label="Clear">
+								<button class="my-2 close-button" 
+								(click)="removeForm('removeCelular')" 
+								*ngIf="indexDoCelular > 0 && indexDoCelular == clienteCredcoop.contato.celular.length-1" 
+								matSuffix mat-icon-button aria-label="Clear">
 									<i class="material-icons d-flex align-items-center">
 										&times;
 									</i>
@@ -216,7 +222,7 @@
 						</mat-checkbox>
 					</div>
 					<div class="col">
-						<button mat-raised-button (click)="addForm('addCelular')" color="primary" style="width:100%">
+						<button mat-raised-button (click)="addForm('addCelular')" style="width:100%">
 							+1 Celular
 						</button>
 					</div>
@@ -229,18 +235,18 @@
 					</div>
 				</div>
 			</form>
-
-			<div class="col-sm-12">
-				<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
-					Salvar
-				</button>
-				<button mat-raised-button (click)="cancel()">
-					Cancelar
-				</button>
-			</div>
-
-			<mat-divider></mat-divider>
-
+			<div class="mat-elevation-z5 pb-3">
+				<div class="row">
+					<div class="col-sm-12 save-form">							
+						<button mat-raised-button (click)="createClienteCredcoop()" color="primary">
+							Salvar
+						</button>
+						<button mat-raised-button (click)="cancel()" color="warn">
+							Cancelar
+						</button>
+					</div>
+				</div>
+			</div>			
 		</mat-card>
 	</mat-tab>
 
