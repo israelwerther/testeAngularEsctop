@@ -1,3 +1,4 @@
+import { AdminCrudComponent } from './views/admin-crud/admin-crud.component';
 
 import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
 import { EsctopCreateComponent } from './components/esctop/esctop-create/esctop-create.component';
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'emprestimo/create',
     component: EmprestimoCreateComponent
+  },
+  {
+    path: 'admin',
+    component: AdminCrudComponent
   }
 ];
 
