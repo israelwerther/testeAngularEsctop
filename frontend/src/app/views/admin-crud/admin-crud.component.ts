@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-crud',
@@ -8,13 +7,9 @@ import { Router } from '@angular/router';
 })
 export class AdminCrudComponent implements OnInit {
 
-  constructor(private Router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-
-  navigateToAgenciaBancariaCreate(): void {
-    this.Router.navigate(['/admin/agenciaBancariaCreate'])
-  }
-
+  
 }
