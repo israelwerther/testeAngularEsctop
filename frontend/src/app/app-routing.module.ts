@@ -1,3 +1,4 @@
+import { BancoCreateComponent } from './components/admin/banco-create/banco-create.component';
 import { AdminCrudComponent } from './views/admin-crud/admin-crud.component';
 
 import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminCrudComponent
+  },
+  {
+    path: 'admin/create/banco',
+    component: BancoCreateComponent
   }
 ];
 

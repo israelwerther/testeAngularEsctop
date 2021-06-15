@@ -41,6 +41,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { NgxMaskModule } from 'ngx-mask';
 import { AdminCrudComponent } from './views/admin-crud/admin-crud.component';
+import { BancoCreateComponent } from './components/admin/banco-create/banco-create.component';
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -62,6 +63,7 @@ import { AdminCrudComponent } from './views/admin-crud/admin-crud.component';
     ProductReadComponent,
     ProductRead2Component,
     AdminCrudComponent,
+    BancoCreateComponent,
   ],
   imports: [
     BrowserModule,
