@@ -1,9 +1,9 @@
-<mat-tab-group mat-align-tabs="start">
+<mat-tab-group mat-align-tabs="start" class="mat-elevation-z5">
 	<mat-tab label="Dados Pessoais">
 		<mat-card>
 			<form class="mat-elevation-z5">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12 py-2">
 						<mat-card-title class="w-100">DADOS DO CLIENTE</mat-card-title>
 					</div>
 				</div>
@@ -95,21 +95,22 @@
 							</svg>
 						</mat-checkbox>
 					</div>
-				</div>				
+				</div>
+				<br>		
 			</form>
 
 			<form class="mat-elevation-z5 mt-3" #f="ngForm">
 				<div class="row" *ngFor="let endereco of clienteCredcoop.enderecos; index as indexDoEndereco">					
-					<div class="col-sm-12">
+					<div class="col-sm-12 py-2">
 						<mat-card-title class="w-100">ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}</mat-card-title>
 					</div>
 					<div class="col-sm-2">
 						<mat-form-field>
 							<input matInput
 							#cep
-							placeholder="CEP"
-							mask="00000-000" 
-							[(ngModel)]="endereco.cep" 
+							placeholder="CEP falta verificar situação da mask"							
+							mask="00000-000"
+							[(ngModel)]="endereco.cep"
 							name="cep{{indexDoEndereco}}"
 							(blur)="consultaCep(cep.value , f, indexDoEndereco)">
 						</mat-form-field>
@@ -176,7 +177,7 @@
 			
 			<form class="mat-elevation-z5 mt-3">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12 py-2">
 						<mat-card-title>CONTATO</mat-card-title>
 					</div>
 				</div>
@@ -255,8 +256,10 @@
 		<mat-card>
 			<form class="mat-elevation-z5">
 				<div class="row">
-					<div class="col-sm-12">
-						<mat-card-title class="w-100">DADOS DA EMPRESA</mat-card-title>
+					<div class="col-sm-12 py-2">
+						<mat-card-title class="w-100">
+							DADOS DA EMPRESA
+						</mat-card-title>
 					</div>
 				</div>
 				<div class="row">
@@ -271,7 +274,7 @@
 
 			<form class="mat-elevation-z5 mt-3" #g="ngForm">
 				<div class="row" *ngFor="let endereco of clienteCredcoop.localDeTrabalho.enderecos; index as indexDoEndereco">
-					<div class="col-sm-12">
+					<div class="col-sm-12 py-2">
 						<mat-card-title class="w-100"> 
 							ENDEREÇO {{indexDoEndereco == 0 ? '1':indexDoEndereco+1}}
 						</mat-card-title>
@@ -349,8 +352,10 @@
 
 			<form class="mat-elevation-z5 mt-3">
 				<div class="row">
-					<div class="col-sm-12">
-						<mat-card-title class="w-100">CONTATO</mat-card-title>
+					<div class="col-sm-12 py-2">
+						<mat-card-title class="w-100">
+							CONTATO
+						</mat-card-title>
 					</div>
 				</div>			
 				<div class="row">
@@ -441,7 +446,7 @@
 		<mat-card>
 			<form class="mat-elevation-z5">
 				<div class="row" *ngFor="let dadoBancario of clienteCredcoop.dadosBancarios; index as indexDoDadoBancario">
-					<div class="col-sm-12">
+					<div class="col-sm-12 py-2">
 						<mat-card-title class="w-100">
 							CONTA BANCÁRIA {{indexDoDadoBancario == 0 ? '1':indexDoDadoBancario+1}}
 						</mat-card-title>
@@ -511,7 +516,7 @@
 		<mat-card>
 			<form class="mat-elevation-z5">
 				<div class="row" *ngFor="let referencia of clienteCredcoop.referencias; index as indexDaReferencia">
-					<div class="col-sm-12">
+					<div class="col-sm-12 py-2">
 						<mat-card-title class="w-100">
 							REFERÊNCIA {{indexDaReferencia == 0 ? '1':indexDaReferencia+1}}
 						</mat-card-title>

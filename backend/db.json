@@ -3,43 +3,43 @@
   "clienteCredcoop": [
     {
       "dadosPessoais": {
-        "nome": "Lab",
-        "cpf": "",
-        "rg": "Ten",
-        "orgaoEmissor": "Eli",
-        "dataNascimento": "1979-08-22",
-        "naturalidade": "Ut ",
-        "nacionalidade": "Inv",
-        "estadoCivil": "Ips",
-        "nomeDaMae": "Eiu",
-        "nomeDoPai": "Off"
+        "nome": "Dolor laudantium ullamco",
+        "cpf": "23423423423422",
+        "rg": "Ea adipisicing eaque qui ",
+        "orgaoEmissor": "Veniam quia occaecat sit",
+        "dataNascimento": "2019-09-26",
+        "naturalidade": "Natus impedit distinctio",
+        "nacionalidade": "Mollitia tenetur dolor qu",
+        "estadoCivil": "Expedita duis et eligendi",
+        "nomeDaMae": "Sequi libero voluptate co",
+        "nomeDoPai": "Vel cum magna excepturi h"
       },
       "dadosConjuge": {
-        "nomeConjuge": "Id",
-        "cpfConjuge": "",
+        "nomeConjuge": "Et deleniti veniam nemo ",
+        "cpfConjuge": "23423423423423",
         "contatoConjuge": "",
         "whatsapp": true
       },
       "enderecos": [
         {
           "cep": "",
-          "rua": "Eni",
-          "bairro": "Id ",
-          "uf": "Imp",
-          "cidade": "Nec",
-          "numero": "Exp",
-          "complemento": "Est",
-          "pontoDeReferencia": "Qui"
+          "rua": "Voluptatem est ea laborio",
+          "bairro": "Ipsa consequatur sit en",
+          "uf": "Ea aspernatur ipsa aut d",
+          "cidade": "Cupiditate aliqua Omnis ",
+          "numero": "Quis ut unde ipsum magni ",
+          "complemento": "Ab qui deserunt hic unde ",
+          "pontoDeReferencia": "Aut aut irure nulla accus"
         },
         {
           "cep": "",
-          "rua": "Dol",
-          "bairro": "Eli",
-          "uf": "Est",
-          "cidade": "Eni",
-          "numero": "Est",
-          "complemento": "Exe",
-          "pontoDeReferencia": "Eni"
+          "rua": "Id cupidatat dolor invent",
+          "bairro": "Inventore proident accus",
+          "uf": "Doloribus dolorum provide",
+          "cidade": "Culpa quia velit sapiente",
+          "numero": "Sit non itaque inventore",
+          "complemento": "Cumque rerum consequatur ",
+          "pontoDeReferencia": "Quia enim quo perspiciati"
         }
       ],
       "contato": {
@@ -56,7 +56,7 @@
             "whatsapp": true
           }
         ],
-        "email": "seqyjiwuw@mailinator.com"
+        "email": "lypex@mailinator.com"
       },
       "localDeTrabalho": {
         "nomeFantasia": "",
@@ -107,103 +107,6 @@
         }
       ],
       "id": 1
-    },
-    {
-      "dadosPessoais": {
-        "nome": "Omn",
-        "cpf": "",
-        "rg": "Mol",
-        "orgaoEmissor": "Quo",
-        "dataNascimento": "2000-11-26",
-        "naturalidade": "Sed",
-        "nacionalidade": "Eni",
-        "estadoCivil": "Ad ",
-        "nomeDaMae": "Con",
-        "nomeDoPai": "Con"
-      },
-      "dadosConjuge": {
-        "nomeConjuge": "Lib",
-        "cpfConjuge": "",
-        "contatoConjuge": "",
-        "whatsapp": true
-      },
-      "enderecos": [
-        {
-          "cep": "",
-          "rua": "Mag",
-          "bairro": "Ven",
-          "uf": "Ear",
-          "cidade": "Quo",
-          "numero": "Eiu",
-          "complemento": "Ape",
-          "pontoDeReferencia": "Con"
-        }
-      ],
-      "contato": {
-        "fixo": [
-          {
-            "numero": "",
-            "ativo": true
-          }
-        ],
-        "celular": [
-          {
-            "numero": "",
-            "ativo": true,
-            "whatsapp": true
-          }
-        ],
-        "email": "cuqefokaz@mailinator.com"
-      },
-      "localDeTrabalho": {
-        "nomeFantasia": "",
-        "enderecos": [
-          {
-            "cep": "",
-            "rua": "",
-            "bairro": "",
-            "uf": "",
-            "cidade": "",
-            "numero": "",
-            "complemento": "",
-            "pontoDeReferencia": ""
-          }
-        ],
-        "contato": {
-          "fixo": [
-            {
-              "numero": "",
-              "ativo": true
-            }
-          ],
-          "celular": [
-            {
-              "numero": "",
-              "ativo": true,
-              "whatsapp": false
-            }
-          ],
-          "email": ""
-        },
-        "observacoes": ""
-      },
-      "dadosBancarios": [
-        {
-          "banco": "",
-          "numeroDaOperacao": "",
-          "tipoDeConta": "",
-          "numeroDaAgencia": "",
-          "numeroDaconta": ""
-        }
-      ],
-      "referencias": [
-        {
-          "nome": "",
-          "contato": "",
-          "parentesco": ""
-        }
-      ],
-      "id": 2
     }
   ]
 }
