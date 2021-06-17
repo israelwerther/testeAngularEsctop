@@ -453,7 +453,14 @@
 					</div>
 					<div class="col-sm-3">
 						<mat-form-field>
-							<input matInput placeholder="Banco" [(ngModel)]="dadoBancario.banco" name="banco{{indexDoDadoBancario}}">
+							<!-- <input matInput placeholder="Banco" [(ngModel)]="dadoBancario.banco" name="banco{{indexDoDadoBancario}}"> -->							
+							<mat-label>Banco</mat-label>
+							<mat-select matInput [(ngModel)]="dadoBancario.banco" name="banco{{indexDoDadoBancario}}">
+								<mat-option value="001-BANCO DO BRASIL S.A.">001-BANCO DO BRASIL S.A.</mat-option>
+								<mat-option value="004-BANCO DO NORDESTE">004-BANCO DO NORDESTE</mat-option>
+								<mat-option value="033-BANCO SANTANDER">033-BANCO SANTANDER</mat-option>
+								<mat-option value="077-BANCO INTERMEDIUM S">077-BANCO INTERMEDIUM S</mat-option>																
+							</mat-select>						
 						</mat-form-field>
 					</div>
 					<div class="col-sm-2">

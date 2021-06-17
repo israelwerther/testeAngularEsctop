@@ -1,18 +1,4 @@
 {
   "products": [],
-  "clienteCredcoop": [],
-  "banco": [
-    {
-      "nomeDoBanco": "asdasd",
-      "id": 1
-    },
-    {
-      "nomeDoBanco": "bando do brasil",
-      "id": 2
-    },
-    {
-      "nomeDoBanco": "bando do nordeste",
-      "id": 3
-    }
-  ]
+  "clienteCredcoop": []
 }

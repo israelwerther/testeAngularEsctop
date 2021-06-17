@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,13 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminCrudComponent implements OnInit {
 
-  constructor(private Router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  navigateToBancoCreate(): void {
-    this.Router.navigate(['/admin/create/banco'])
   }
   
 }
