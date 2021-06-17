@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -42,8 +42,13 @@ import { MatSortModule } from '@angular/material/sort';
 import { NgxMaskModule } from 'ngx-mask';
 import { AdminCrudComponent } from './views/admin-crud/admin-crud.component';
 import { MatSelectModule } from '@angular/material/select';
+
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt);
+
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -88,9 +93,10 @@ import { MatNativeDateModule } from '@angular/material/core';
     NgxMaskModule.forRoot(),
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

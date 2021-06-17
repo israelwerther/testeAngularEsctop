@@ -22,9 +22,8 @@
 			</div>
 			<div class="col-sm-2">
 				<mat-form-field>
-					<input matInput placeholder="Data do Empréstimo" [matDatepicker]="picker" [(ngModel)]="emprestimo.dataDoEmprestimo" name="dataDoEmprestimo">
-
-					<!-- <input matInput [matDatepicker]="picker"> -->
+					<input matInput placeholder="Data do Empréstimo" [matDatepicker]="picker" 
+					[(ngModel)]="emprestimo.dataDoEmprestimo" name="dataDoEmprestimo" >					
 					<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
 					<mat-datepicker #picker></mat-datepicker>
 				</mat-form-field>
@@ -54,3 +53,5 @@
 		<br>
 	</div>	
 </mat-card>
+
+
