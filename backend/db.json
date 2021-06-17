@@ -1,4 +1,30 @@
 {
   "products": [],
-  "clienteCredcoop": []
+  "clienteCredcoop": [],
+  "emprestimo": [
+    {
+      "id": 1
+    },
+    {
+      "valorDoEmprestimo": "asdasd",
+      "quantidadeDeParcelas": "",
+      "dataDoEmprestimo": "",
+      "valorDaParcela": "",
+      "id": 2
+    },
+    {
+      "valorDoEmprestimo": "",
+      "quantidadeDeParcelas": "",
+      "dataDoEmprestimo": "",
+      "valorDaParcela": "",
+      "id": 3
+    },
+    {
+      "valorDoEmprestimo": "",
+      "quantidadeDeParcelas": "",
+      "dataDoEmprestimo": "",
+      "valorDaParcela": "",
+      "id": 4
+    }
+  ]
 }

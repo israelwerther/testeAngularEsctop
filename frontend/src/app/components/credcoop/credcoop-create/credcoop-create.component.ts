@@ -106,8 +106,7 @@ export class CredcoopCreateComponent implements OnInit {
 
   constructor(private clienteCredcoopService: ClienteCredcoopService, private router: Router, private cepService: CepService) { }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {    
   }
 
   // adiciona um component de formulário; contato e endereços, por exemplo
