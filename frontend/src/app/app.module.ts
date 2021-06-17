@@ -32,8 +32,8 @@ import { CredcoopCreateComponent } from './components/credcoop/credcoop-create/c
 import { EsctopCreateComponent } from './components/esctop/esctop-create/esctop-create.component';
 import { EmprestimoCreateComponent } from './components/emprestimo/emprestimo-create/emprestimo-create.component';
 
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
 import { MatTableModule } from '@angular/material/table';
@@ -43,7 +43,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { AdminCrudComponent } from './views/admin-crud/admin-crud.component';
 import { MatSelectModule } from '@angular/material/select';
 
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
