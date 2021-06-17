@@ -42,6 +42,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { NgxMaskModule } from 'ngx-mask';
 import { AdminCrudComponent } from './views/admin-crud/admin-crud.component';
 import { MatSelectModule } from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   // Aqui vai os components, diretivas e pipes
@@ -85,6 +87,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatSortModule,
     NgxMaskModule.forRoot(),
     MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
