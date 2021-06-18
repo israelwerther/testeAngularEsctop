@@ -1,151 +1,22 @@
 {
   "products": [],
-  "clienteCredcoop": [
-    {
-      "dadosPessoais": {
-        "nome": "Et qui excepturi cupidita",
-        "cpf": "",
-        "rg": "Nostrum quo totam dolores",
-        "orgaoEmissor": "Nisi id quisquam sed null",
-        "dataNascimento": "1980-12-24",
-        "naturalidade": "Sed placeat tenetur modi",
-        "nacionalidade": "Magna sed maiores veritat",
-        "estadoCivil": "Labore autem quis maiores",
-        "nomeDaMae": "Autem voluptas sit conse",
-        "nomeDoPai": "Dolor non nihil do quis d"
-      },
-      "dadosConjuge": {
-        "nomeConjuge": "Odit dolore quia voluptat",
-        "cpfConjuge": "",
-        "contatoConjuge": "",
-        "whatsapp": true
-      },
-      "enderecos": [
-        {
-          "cep": "",
-          "rua": "Amet et doloribus alias ",
-          "bairro": "Optio voluptatem Volupt",
-          "uf": "Obcaecati rem consequuntu",
-          "cidade": "Consectetur qui fugiat c",
-          "numero": "Irure anim neque commodi ",
-          "complemento": "Deserunt sed sapiente ea ",
-          "pontoDeReferencia": "In corrupti porro sint v"
-        }
-      ],
-      "contato": {
-        "fixo": [
-          {
-            "numero": "",
-            "ativo": true
-          }
-        ],
-        "celular": [
-          {
-            "numero": "",
-            "ativo": true,
-            "whatsapp": true
-          }
-        ],
-        "email": "tyxiho@mailinator.com"
-      },
-      "localDeTrabalho": {
-        "nomeFantasia": "Eum recusandae Sed enim ",
-        "enderecos": [
-          {
-            "cep": "",
-            "rua": "Quibusdam et in consequun",
-            "bairro": "Laboris cupiditate aliqui",
-            "uf": "Pariatur Qui vero adipis",
-            "cidade": "In ut necessitatibus recu",
-            "numero": "Aut impedit in voluptas ",
-            "complemento": "Qui ut atque deserunt cul",
-            "pontoDeReferencia": "Quo rem est eveniet eni"
-          }
-        ],
-        "contato": {
-          "fixo": [
-            {
-              "numero": "",
-              "ativo": true
-            }
-          ],
-          "celular": [
-            {
-              "numero": "",
-              "ativo": true,
-              "whatsapp": true
-            }
-          ],
-          "email": "tudewatiqe@mailinator.com"
-        },
-        "observacoes": "Omnis asperiores dolor ni"
-      },
-      "dadosBancarios": [
-        {
-          "banco": "001- banco do brasl",
-          "numeroDaOperacao": "123123",
-          "tipoDeConta": "123",
-          "numeroDaAgencia": "123",
-          "numeroDaconta": "123"
-        },
-        {
-          "banco": "Maconha",
-          "numeroDaOperacao": "123123",
-          "tipoDeConta": "23123",
-          "numeroDaAgencia": "123123",
-          "numeroDaconta": "123123"
-        }
-      ],
-      "referencias": [
-        {
-          "nome": "",
-          "contato": "",
-          "parentesco": ""
-        }
-      ],
-      "id": 1
-    }
-  ],
+  "clienteCredcoop": [],
   "banco": [
     {
-      "nomeDoBanco": "Brasil",
+      "nomeDoBanco": "246\tBanco ABC Brasil S.A.",
       "id": 1
     },
     {
-      "nomeDoBanco": "Nordeste",
+      "nomeDoBanco": "748\tBanco Cooperativo Sicredi S.A.",
       "id": 2
     },
     {
-      "nomeDoBanco": "Santander",
+      "nomeDoBanco": "117\tAdvanced Cc Ltda",
       "id": 3
     },
     {
-      "nomeDoBanco": "Natal",
+      "nomeDoBanco": "121\tBanco Agibank S.A.",
       "id": 4
-    },
-    {
-      "nomeDoBanco": "Cupuaçu",
-      "id": 5
-    },
-    {
-      "nomeDoBanco": "Noronha",
-      "id": 6
-    },
-    {
-      "nomeDoBanco": "Maconha",
-      "id": 7
-    },
-    {
-      "nomeDoBanco": "Israel",
-      "id": 8
-    },
-    {
-      "nomeDoBanco": "Silveira",
-      "id": 9
-    },
-    {
-      "nomeDoBanco": "001- banco do brasl",
-      "id": 10
     }
   ],
   "emprestimo": []

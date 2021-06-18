@@ -23,7 +23,7 @@ export class BancoService {
   create(banco: any): Observable<any> {
     return this.http.post<any>(this.baseUrl, banco)
   }
-
+  
   getBancos(): Observable<any> {
     return this.http.get<any>(this.baseUrl)
   }
