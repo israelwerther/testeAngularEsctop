@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title>Novo Banco</mat-card-title>
+    <form>
+        <div class="row">
+            <div class="col-xl-4">
+                <mat-form-field *ngFor="let banco of bancos; index as indexDoBanco">
+                    <input matInput placeholder="Nome do Banco {{indexDoBanco}}"
+                    [(ngModel)]="banco.nomeDoBanco" name="nomeDoBanco{{indexDoBanco}}">
+                </mat-form-field>        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button mat-raised-button primary (click)="this.bancos.push({nomeDoBanco: ''})" style="width:100%">
+                    +1 Banco
+                </button>
+            </div>
+        </div>
+    </form>    
+    <button mat-raised-button (click)="createBanco()" color="primary">
+        Salvar
+    </button>    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -3,6 +3,7 @@ import { ClienteCredcoop } from './../clienteCredcoop.model';
 import { ClienteCredcoopService } from './../cliente-credcoop.service';
 import { Router } from '@angular/router';
 import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { BancoService } from '../../admin/banco.service';
 
 @Component({
   selector: 'app-credcoop-create',
@@ -10,7 +11,9 @@ import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./credcoop-create.component.css']
 })
 
-export class CredcoopCreateComponent implements OnInit {  
+export class CredcoopCreateComponent implements OnInit { 
+  bancos: any = []
+
   clienteCredcoop: ClienteCredcoop = {
     dadosPessoais: {
       nome: '',
@@ -104,9 +107,14 @@ export class CredcoopCreateComponent implements OnInit {
     }],    
   };
 
-  constructor(private clienteCredcoopService: ClienteCredcoopService, private router: Router, private cepService: CepService) { }
+  constructor(private clienteCredcoopService: ClienteCredcoopService, 
+    private router: Router, 
+    private cepService: CepService,
+    private bancoService: BancoService
+    ) { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
+    this.bancoService.getBancos().subscribe((bancos) => this.bancos = bancos);
   }
 
   // adiciona um component de formulário; contato e endereços, por exemplo

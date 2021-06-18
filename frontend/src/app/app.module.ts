@@ -50,6 +50,10 @@ import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt);
 
 
+
+import { BancoCreateComponent } from './components/admin/banco/banco.component';
+
+
 @NgModule({
   // Aqui vai os components, diretivas e pipes
   declarations: [
@@ -70,6 +74,7 @@ registerLocaleData(localePt);
     ProductReadComponent,
     ProductRead2Component,
     AdminCrudComponent,
+    BancoCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -94,7 +99,6 @@ registerLocaleData(localePt);
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt'}],
   bootstrap: [AppComponent]

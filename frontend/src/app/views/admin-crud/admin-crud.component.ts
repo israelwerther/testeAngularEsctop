@@ -14,7 +14,7 @@ export class AdminCrudComponent implements OnInit {
   }
 
   navigateToBancoCreate(): void {
-    this.Router.navigate(['/admin/create/banco'])
+    this.Router.navigate(['/admin/banco/create'])
   }
   
 }
