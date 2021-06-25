@@ -25,8 +25,7 @@ export class BancoCreateComponent implements OnInit {
     this.bancos.forEach((banco) => this.bancoService.create(banco).subscribe(() => {}))
     this.bancoService.showMessage('Banco(s) cadastrado(s)!')
     this.router.navigate(['/admin'])
-  }
-  
+  }  
 
   cancel(): void {
     this.router.navigate(['/admin'])

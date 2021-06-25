@@ -5,22 +5,28 @@
 				<mat-card-title class="w-100">
 					Cadastro Bancos
 				</mat-card-title>
-			</div>				
-			<div class="col-sm-3">
-				<mat-form-field *ngFor="let banco of bancos; index as indexDoBanco">
-					<input matInput placeholder="Nome do Banco {{indexDoBanco+1}}" 
-						[(ngModel)]="banco.nomeDoBanco"
-						name="nomeDoBanco{{indexDoBanco}}">
+			</div>
+			<div class="col-sm-4" *ngFor="let banco of bancos; index as indexDoBanco; last as isLast">
+				<mat-form-field >
+					<mat-label>Banco</mat-label>
+					<input matInput placeholder="Ex: 000-BANCO CREDCOOP" [(ngModel)]="banco.nomeDoBanco" name="nomeDoBanco{{indexDoBanco}}">
+					<button class="my-1 mx-0 close-button"	 (click)="this.bancos.pop()"				
+					*ngIf="indexDoBanco > 0 && isLast " 
+					matSuffix mat-icon-button aria-label="Clear">
+						<i class="material-icons d-flex align-items-center">
+							&times;
+						</i>
+					</button>
 				</mat-form-field>
 			</div>
-		</div>
+		</div>		
 		<div class="row">
 			<div class="col">
 				<button mat-raised-button primary (click)="this.bancos.push({nomeDoBanco: ''})" style="width:100%">
 					+1 Banco
 				</button>
 			</div>
-		</div>
+		</div>		
 		<br>
 	</form>
 	<div class="mat-elevation-z5">
