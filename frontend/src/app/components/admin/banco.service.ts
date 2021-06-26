@@ -1,3 +1,4 @@
+import { Banco } from './banco.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -26,6 +27,10 @@ export class BancoService {
   
   getBancos(): Observable<any> {
     return this.http.get<any>(this.baseUrl)
+  }  
+
+  delete(id: number): Observable<any> {
+    return this.http.delete<any>(`${this.baseUrl}/${id}`)
   }
 
 }

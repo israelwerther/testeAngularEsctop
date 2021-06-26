@@ -1,7 +1,7 @@
-import { BancoService } from './../banco.service';
+import { Banco } from './../banco.model';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-
+import { BancoService } from './../banco.service';
 
 @Component({
   selector: 'app-banco-create',
@@ -9,16 +9,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banco.component.css']
 })
 export class BancoCreateComponent implements OnInit {
-  bancos = [
-    {
-      nomeDoBanco: '',    
-    },
-  ]
-  constructor(private bancoService: BancoService,
-    private router: Router) { }
+
+  bancos: Banco[] = [{
+    nomeDoBanco: ''
+  }];
+
+  listaBancos: any[]= []
+
+  constructor(private bancoService: BancoService, private router: Router) { }
 
   ngOnInit(): void {
+    this.getBancos()
+  }
 
+  getBancos(): void {
+    this.bancoService.getBancos().subscribe(bancos => {
+      this.listaBancos = bancos
+    })
   }
 
   createBanco(): void {
@@ -29,6 +36,13 @@ export class BancoCreateComponent implements OnInit {
 
   cancel(): void {
     this.router.navigate(['/admin'])
+  }
+
+  removeBancos(id: number): void {
+    // this.listaBancos.splice(id, 1)
+    this.bancoService.delete(id).subscribe(response => {
+      this.getBancos()
+    })    
   }
 
 }

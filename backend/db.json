@@ -3,10 +3,6 @@
   "clienteCredcoop": [],
   "banco": [
     {
-      "nomeDoBanco": "246\tBanco ABC Brasil S.A.",
-      "id": 1
-    },
-    {
       "nomeDoBanco": "748\tBanco Cooperativo Sicredi S.A.",
       "id": 2
     },
@@ -17,6 +13,26 @@
     {
       "nomeDoBanco": "121\tBanco Agibank S.A.",
       "id": 4
+    },
+    {
+      "nomeDoBanco": "777\tbanco aras ",
+      "id": 6
+    },
+    {
+      "nomeDoBanco": "000 banco maisculo",
+      "id": 8
+    },
+    {
+      "nomeDoBanco": "000 BANCO minisculo",
+      "id": 9
+    },
+    {
+      "nomeDoBanco": "555 agata",
+      "id": 10
+    },
+    {
+      "nomeDoBanco": "carai\\a",
+      "id": 11
     }
   ],
   "emprestimo": []
